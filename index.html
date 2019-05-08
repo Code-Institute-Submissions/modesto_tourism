@@ -5,27 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Modesto Tourism</title>
     <!-- Favicon -->
-
+    <link href="https://thestarvingcoder.github.io/modesto_tourism/assets/images/favicon.ico?" rel="icon" type="image/x-icon" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:400,700" rel="stylesheet">
     <!-- CSS -->
+    <link rel="stylesheet" href="https://thestarvingcoder.github.io/modesto_tourism/assets/styles/style.css">
+    <!-- Code CSS -->
     <link rel="stylesheet" href="/assets/styles/style.css">
-    <!-- Google maps style -->
-    <style>
-        /* Always set the map height explicitly to define the size of the div
-             * element that contains the map. */
-        /* #map {
-            height: 100%;
-        }
-                 */
-        /* Optional: Makes the sample page fill the window. */
-        /* html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        } */
-    </style>
+    <!-- Map JS -->
+    <script src="/assets/js/maps.js"></script>
 </head>
 
 <body>
@@ -38,14 +28,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="navbar-brand" href="https://thestarvingcoder.github.io/modesto_tourism/">Modesto Tourism</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
+                <!-- <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li><a href="#">Tourist Attractions</a></li>
+                    <li><a href="#">Accommodation</a></li>
+                    <li><a href="#">Bars and Restaurants</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <form class="navbar-form navbar-left" action="/action_page.php">
@@ -58,7 +48,7 @@
                             </div>
                         </div>
                     </form>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </nav>
@@ -67,72 +57,67 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h3>
-                    h3. Lorem ipsum dolor sit amet.
-                </h3>
-                <address>
-                    <strong>Twitter, Inc.</strong><br /> 795 Folsom Ave, Suite 600<br /> San Francisco, CA 94107<br />
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                </address>
+                <h2>Motto: Water Wealth Contentment Health</h2>
+               <p>
+                Modesto is located in the Central Valley, 90 miles (140 km) north of Fresno, 40 miles (64 km) north of Merced, California, 92 miles (148 km) east of San Francisco, 68 miles (109 km) south of the state capital of Sacramento, 66 miles (106 km) west of Yosemite National Park, and 24 miles (39 km) south of Stockton. Modesto has been honored as a Tree City USA numerous times.[15] It is surrounded by rich farmland; Stanislaus County ranks sixth among California counties in farm production.[16] Led by milk, almonds, chickens, walnuts, and corn silage, the county grossed nearly $3.1 billion in agricultural production in 2011. The farm-to-table movement plays a central role in Modesto living as in the Central Valley.
+               </p>
+               <h3> Popular places to visit are:</h3>
+                   <ul>
+                       <li>Vintage fair Mall</li>
+                       <li>Modesto Jr College</li>
+                       <li>Funworks Modesto</li>
+                       <li>Train station</li>
+                   </ul>
             </div>
         </div>
-        <div id="map"></div>
-        <script>
-            var map;
-
-            function initMap() {
-                // The location of Vintage Fair Mall
-                var Vintage = {
-                    lat: 37.688760,
-                    lng: -121.053730
-                };
-                // The location of Modesto Jr College
-                var MJC = {
-                    lat: 37.651300,
-                    lng: -121.008040
-                };
-                    // The location of Train Station
-                    var Train = {
-                    lat: 37.669014,
-                    lng: -120.912773
-                };
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: 37.639095,
-                        lng: -120.996880
-                    },
-                    zoom: 14
-
-                });
-                // The marker, positioned at Vintage Fair Mall
-                var marker = new google.maps.Marker({
-                    position: Vintage,
-                    map: map
-                });
-                 // The marker, positioned at Modesto Jr College
-                 var marker = new google.maps.Marker({
-                    position: MJC,
-                    map: map
-                });
-                   // The marker, positioned at Train Station
-                   var marker = new google.maps.Marker({
-                    position: Train,
-                    map: map
-                });
-            }
-        </script>
-
-        <!-- API Key -->
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&callback=initMap"
-            async defer></script>
     </div>
-    </div>
-    </div>
+        
+<!-- Auto Complete -->
+<div class="pac-card" id="pac-card">
+    <div>
+      <div id="title">
+        Search
+      </div>
+      <div id="type-selector" class="pac-controls">
+        <input type="radio" name="type" id="changetype-all" checked="checked">
+        <label for="changetype-all">All</label>
 
-    <!-- Footer -->
-    <footer>
+        <input type="radio" name="type" id="changetype-establishment">
+        <label for="changetype-establishment">Establishments</label>
 
+        <input type="radio" name="type" id="changetype-address">
+        <label for="changetype-address">Addresses</label>
+
+        <input type="radio" name="type" id="changetype-geocode">
+        <label for="changetype-geocode">Geocodes</label>
+      </div>
+      <div id="strict-bounds-selector" class="pac-controls">
+        <input type="checkbox" id="use-strict-bounds" value="">
+        <label for="use-strict-bounds">Strict Bounds</label>
+      </div>
+    </div>
+    <div id="pac-container">
+      <input id="pac-input" type="text"
+          placeholder="Enter a location">
+    </div>
+  </div>
+  <!-- Map -->
+  <div id="map"></div>
+  <div id="infowindow-content">
+    <img src="" width="16" height="16" id="place-icon">
+    <span id="place-name"  class="title"></span><br>
+    <span id="place-address"></span>
+  </div>
+
+  
+            <!-- API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&callback=initMap" async defer></script>
+        <!-- PLACES API Key -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&libraries=places"></script> -->
+
+<!-- Footer -->
+<footer>
+        <p>❤️ Modesto</p>
     </footer>
 
 

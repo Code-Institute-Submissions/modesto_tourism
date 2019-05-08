@@ -1,4 +1,4 @@
-# [Modesto_tourism](https://thestarvingcoder.github.io/modesto_tourism/)
+# [Modesto Tourism](https://thestarvingcoder.github.io/modesto_tourism/)
 
 ## A single page for people visiting Modesto using Google Maps API
 
