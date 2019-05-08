@@ -13,6 +13,9 @@ h2 {
     text-align: center;
     text-transform: capitalize;
 }
+h3 {
+    padding-bottom: 10px;
+}
 
 /* Google Maps Style */
 #map {
