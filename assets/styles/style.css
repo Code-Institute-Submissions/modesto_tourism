@@ -8,3 +8,10 @@ center {
     text-align: center;
     margin: auto;
 }
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    min-height: 360px;
+  }

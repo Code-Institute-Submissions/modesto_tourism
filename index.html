@@ -14,17 +14,17 @@
     <style>
         /* Always set the map height explicitly to define the size of the div
              * element that contains the map. */
-        #map {
+        /* #map {
             height: 100%;
         }
-
+                 */
         /* Optional: Makes the sample page fill the window. */
-        html,
+        /* html,
         body {
             height: 100%;
             margin: 0;
             padding: 0;
-        }
+        } */
     </style>
 </head>
 
@@ -64,7 +64,7 @@
     </nav>
 
     <!-- Container -->
-    <div class="container-fluid center">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h3>
@@ -76,25 +76,58 @@
                 </address>
             </div>
         </div>
-                <div id="map"></div>
-                <script>
-        var map;
+        <div id="map"></div>
+        <script>
+            var map;
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: 37.639095,
-                    lng: -120.996880
-                },
-                zoom: 10
-            });
-        }
-    </script>
-                <script
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&callback=initMap"
-                    async defer></script>
-            </div>
-        </div>
+            function initMap() {
+                // The location of Vintage Fair Mall
+                var Vintage = {
+                    lat: 37.688760,
+                    lng: -121.053730
+                };
+                // The location of Modesto Jr College
+                var MJC = {
+                    lat: 37.651300,
+                    lng: -121.008040
+                };
+                    // The location of Train Station
+                    var Train = {
+                    lat: 37.669014,
+                    lng: -120.912773
+                };
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {
+                        lat: 37.639095,
+                        lng: -120.996880
+                    },
+                    zoom: 14
+
+                });
+                // The marker, positioned at Vintage Fair Mall
+                var marker = new google.maps.Marker({
+                    position: Vintage,
+                    map: map
+                });
+                 // The marker, positioned at Modesto Jr College
+                 var marker = new google.maps.Marker({
+                    position: MJC,
+                    map: map
+                });
+                   // The marker, positioned at Train Station
+                   var marker = new google.maps.Marker({
+                    position: Train,
+                    map: map
+                });
+            }
+        </script>
+
+        <!-- API Key -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&callback=initMap"
+            async defer></script>
+    </div>
+    </div>
     </div>
 
     <!-- Footer -->
