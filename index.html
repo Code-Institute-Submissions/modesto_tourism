@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Modesto Tourism</title>
     <!-- Favicon -->
-    <link href="https://thestarvingcoder.github.io/modesto_tourism/assets/images/favicon.ico?" rel="icon" type="image/x-icon" />
+    <link href="https://thestarvingcoder.github.io/modesto_tourism/assets/images/favicon.ico" rel="icon"
+        type="image/x-icon" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
@@ -57,66 +58,97 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h2>Motto: Water Wealth Contentment Health</h2>
-               <p>
-                Modesto is located in the Central Valley, 90 miles (140 km) north of Fresno, 40 miles (64 km) north of Merced, California, 92 miles (148 km) east of San Francisco, 68 miles (109 km) south of the state capital of Sacramento, 66 miles (106 km) west of Yosemite National Park, and 24 miles (39 km) south of Stockton. Modesto has been honored as a Tree City USA numerous times.[15] It is surrounded by rich farmland; Stanislaus County ranks sixth among California counties in farm production.[16] Led by milk, almonds, chickens, walnuts, and corn silage, the county grossed nearly $3.1 billion in agricultural production in 2011. The farm-to-table movement plays a central role in Modesto living as in the Central Valley.
-               </p>
-               <h3> Popular places to visit are:</h3>
-                   <ul>
-                       <li>Vintage fair Mall</li>
-                       <li>Modesto Jr College</li>
-                       <li>Funworks Modesto</li>
-                       <li>Train station</li>
-                   </ul>
+                <div class="jumbotron">
+                                        <h2> Water Wealth Contentment Health</h2>
+                    <p>
+                        Modesto is located in the Central Valley, 90 miles  north of Fresno, 40 miles 
+                        north of Merced, California, 92 miles  east of San Francisco, 68 miles  south of
+                        the state capital of Sacramento, 66 miles  west of Yosemite National Park, and 24 miles
+                         south of Stockton. Modesto has been honored as a Tree City USA numerous times. It is
+                        surrounded by rich farmland; Stanislaus County ranks sixth among California counties in farm
+                        production. Led by milk, almonds, chickens, walnuts, and corn silage, the county grossed
+                        nearly $3.1 billion in agricultural production in 2011. The farm-to-table movement plays a
+                        central role in Modesto living as in the Central Valley.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3> Accommodations:</h3>
+                            <ul>
+                                <li>Vintage fair Mall</li>
+                                <li>Modesto Jr College</li>
+                                <li>Modesto Airport</li>
+                                <li>Modesto Train station</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3> Places to visit:</h3>
+                            <ul>
+                                <li>Vintage fair Mall</li>
+                                <li>Modesto Jr College</li>
+                                <li>Funworks Modesto</li>
+                                <li>Mc Henry Village</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3> Bars and Restaurants:</h3>
+                            <ul>
+                                <li>The Elephant Bar</li>
+                                <li>Modesto Jr College</li>
+                                <li>Funworks Modesto</li>
+                                <li>Modesto Train station</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        
-<!-- Auto Complete -->
-<div class="pac-card" id="pac-card">
-    <div>
-      <div id="title">
-        Search
-      </div>
-      <div id="type-selector" class="pac-controls">
-        <input type="radio" name="type" id="changetype-all" checked="checked">
-        <label for="changetype-all">All</label>
 
-        <input type="radio" name="type" id="changetype-establishment">
-        <label for="changetype-establishment">Establishments</label>
+    <!-- Auto Complete -->
+    <div class="pac-card" id="pac-card">
+        <div>
+            <div id="title">
+                Search
+            </div>
+            <div id="type-selector" class="pac-controls">
+                <input type="radio" name="type" id="changetype-all" checked="checked">
+                <label for="changetype-all">All</label>
 
-        <input type="radio" name="type" id="changetype-address">
-        <label for="changetype-address">Addresses</label>
+                <input type="radio" name="type" id="changetype-establishment">
+                <label for="changetype-establishment">Establishments</label>
 
-        <input type="radio" name="type" id="changetype-geocode">
-        <label for="changetype-geocode">Geocodes</label>
-      </div>
-      <div id="strict-bounds-selector" class="pac-controls">
-        <input type="checkbox" id="use-strict-bounds" value="">
-        <label for="use-strict-bounds">Strict Bounds</label>
-      </div>
+                <input type="radio" name="type" id="changetype-address">
+                <label for="changetype-address">Addresses</label>
+
+                <input type="radio" name="type" id="changetype-geocode">
+                <label for="changetype-geocode">Geocodes</label>
+            </div>
+            <div id="strict-bounds-selector" class="pac-controls">
+                <input type="checkbox" id="use-strict-bounds" value="">
+                <label for="use-strict-bounds">Strict Bounds</label>
+            </div>
+        </div>
+        <div id="pac-container">
+            <input id="pac-input" type="text" placeholder="Enter a location">
+        </div>
     </div>
-    <div id="pac-container">
-      <input id="pac-input" type="text"
-          placeholder="Enter a location">
+    <!-- Map -->
+    <div id="map"></div>
+    <div id="infowindow-content">
+        <img src="" width="16" height="16" id="place-icon">
+        <span id="place-name" class="title"></span><br>
+        <span id="place-address"></span>
     </div>
-  </div>
-  <!-- Map -->
-  <div id="map"></div>
-  <div id="infowindow-content">
-    <img src="" width="16" height="16" id="place-icon">
-    <span id="place-name"  class="title"></span><br>
-    <span id="place-address"></span>
-  </div>
 
-  
-            <!-- API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&callback=initMap" async defer></script>
-        <!-- PLACES API Key -->
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuUJscq4PlSPmtoVUyh6t5rHGSZiCwKA0&libraries=places"></script> -->
+<!-- KEY -->
+<!-- AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs -->
 
-<!-- Footer -->
-<footer>
+    <!-- Maps and Places API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&callback=initMap&libraries=places"
+        async defer></script>
+
+    <!-- Footer -->
+    <footer>
         <p>❤️ Modesto</p>
     </footer>
 

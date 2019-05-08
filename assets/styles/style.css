@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
 /* Google Maps Style */
 #map {
     width: 100%;

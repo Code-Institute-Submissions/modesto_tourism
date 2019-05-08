@@ -1,6 +1,8 @@
 # [Modesto Tourism](https://thestarvingcoder.github.io/modesto_tourism/)
 
-## A single page for people visiting Modesto using Google Maps API
+## A single tourism page for people visiting Modesto using Google Maps & Places API
+
+Directions:
 
 Create a site that calls on the Google Maps API and/or the Google Places API (or similar) to allow users to search for their next holiday destination.
 
