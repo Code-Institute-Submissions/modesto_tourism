@@ -1,31 +1,3 @@
-
-// function initMap() {
-//     // The location of Vintage Fair Mall
-//     var Vintage = {
-//         lat: 37.688760,
-//         lng: -121.053730
-//     };
-//     // The location of Modesto Jr College
-//     var MJC = {
-//         lat: 37.651300,
-//         lng: -121.008040
-//     };
-//         // The location of Train Station
-//         var Train = {
-//         lat: 37.669014,
-//         lng: -120.912773
-//     };
-//     map = new google.maps.Map(document.getElementById('map'), {
-//         center: {
-//             lat: 37.639095,
-//             lng: -120.996880
-//         },
-//         zoom: 13
-
-//     });
-
-    // This example requires the Places library. Include the libraries=places
-    // parameter when you first load the API. For example:
     var map;
 
     function initMap() {
