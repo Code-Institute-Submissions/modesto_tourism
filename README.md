@@ -13,3 +13,7 @@ You'll want help your users:
 - Find accommodation
 - Find bars and restaurants
 - Provide search results in a manner that is visually appealing for your user (by drawing on the skills you have learned in User-Centric Frontend Development)
+
+Photos from
+-[Algolub Photography](algolub.photoshelter.com)
+-[Wikipedia](https://en.wikipedia.org/wiki/Modesto,_California)

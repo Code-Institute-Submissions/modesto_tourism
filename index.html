@@ -3,12 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modesto Tourism</title>
     <!-- Favicon -->
     <link href="https://thestarvingcoder.github.io/modesto_tourism/assets/images/favicon.ico" rel="icon"
         type="image/x-icon" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:400,700" rel="stylesheet">
     <!-- CSS -->
@@ -27,7 +31,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -36,17 +40,28 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="https://thestarvingcoder.github.io/modesto_tourism/index.html">Modesto
-                    Tourism</a>
+                    Tourism</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a class="page-scroll" href="#about">About</a></li>
+                        <li><a class="page-scroll" href="#events">Events</a></li>
+                        <li><a class="page-scroll" href="#mapsection">Map</a></li>
+                    </ul>
+                </ul>
+
             </div>
         </div>
     </nav>
 
+
     <!-- Container -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="top">
         <div class="row">
             <div class="col-md-12">
-                <div class="jumbotron">
-                    <h2> Water Wealth Contentment Health</h2>
+                <div class="jumbotron" id="about">
+                    <h1 class="center">Modesto</h1>
+                    <h2 class="motto"> Water Wealth Contentment Health</h2>
                     <p>
                         Modesto is located in the Central Valley, 90 miles north of Fresno, 40 miles
                         north of Merced, California, 92 miles east of San Francisco, 68 miles south of
@@ -57,33 +72,35 @@
                         nearly $3.1 billion in agricultural production in 2011. The farm-to-table movement plays a
                         central role in Modesto living as in the Central Valley.
                     </p>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3> Accommodations:</h3>
-                            <ul>
-                                <li>Vintage fair Mall</li>
-                                <li>Modesto Jr College</li>
-                                <li>Modesto Airport</li>
-                                <li>Modesto Train station</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3> Places to visit:</h3>
-                            <ul>
-                                <li>Vintage fair Mall</li>
-                                <li>Modesto Jr College</li>
-                                <li>Funworks Modesto</li>
-                                <li>Mc Henry Village</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3> Bars and Restaurants:</h3>
-                            <ul>
-                                <li>The Elephant Bar</li>
-                                <li>Modesto Jr College</li>
-                                <li>Funworks Modesto</li>
-                                <li>Modesto Train station</li>
-                            </ul>
+                    <div class="container-fluid center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3> Accommodations:</h3>
+                                <ul>
+                                    <li>Vintage fair Mall</li>
+                                    <li>Modesto Jr College</li>
+                                    <li>Modesto Airport</li>
+                                    <li>Modesto Train station</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h3> Places to visit:</h3>
+                                <ul>
+                                    <li>Vintage fair Mall</li>
+                                    <li>Modesto Jr College</li>
+                                    <li>Funworks Modesto</li>
+                                    <li>Mc Henry Village</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h3> Bars and Restaurants:</h3>
+                                <ul>
+                                    <li>The Elephant Bar</li>
+                                    <li>Modesto Jr College</li>
+                                    <li>Funworks Modesto</li>
+                                    <li>Modesto Train station</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,54 +108,154 @@
         </div>
     </div>
 
+    <!-- Events -->
+    <div class="container-fluid" id="events">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h3 class="center">Upcoming Events</h3>
+                    <table class="table table-hover table-sm table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Event
+                                </th>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    Location
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    "The American Soldier" a solo play
+                                </td>
+                                <td>
+                                    5/1/2019
+                                </td>
+                                <td>
+                                    State Theatre
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    1st Annual Chef & Survivor Team Chili Cook Off
+                                </td>
+                                <td>
+                                    5/1/2019
+                                </td>
+                                <td>
+                                    Institute of Technology
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    	Technology + Innovation Conference
+                                </td>
+                                <td>
+                                        5/2/2019
+                                </td>
+                                <td>
+                                        Doubletree Hotel
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                        Jonansen Spring Concert
+                                </td>
+                                <td>
+                                        5/2/2019 
+                                </td>
+                                <td>
+                                        Johansen High School
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                        Music in the Plaza
+                                </td>
+                                <td>
+                                        5/3/2019
+                                </td>
+                                <td>
+                                        10th Street Plaza
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Auto Complete -->
-    <div class="pac-card" id="pac-card">
-        <div>
-            <div id="title">
+    <div class="container-fluid" id="mapsection">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pac-card" id="pac-card">
+                    <div class="">
+                        <!-- <div id="title">
                 Search
-            </div>
-            <div id="type-selector" class="pac-controls">
-                <input type="radio" name="type" id="changetype-all" checked="checked">
-                <label for="changetype-all">All</label>
+            </div> -->
+                        <div id="type-selector" class="pac-controls">
+                            <input type="radio" name="type" id="changetype-all" checked="checked">
+                            <label for="changetype-all">All</label>
 
-                <input type="radio" name="type" id="changetype-establishment">
-                <label for="changetype-establishment">Establishments</label>
+                            <input type="radio" name="type" id="changetype-establishment">
+                            <label for="changetype-establishment">Establishments</label>
 
-                <input type="radio" name="type" id="changetype-address">
-                <label for="changetype-address">Addresses</label>
+                            <input type="radio" name="type" id="changetype-address">
+                            <label for="changetype-address">Addresses</label>
 
-                <input type="radio" name="type" id="changetype-geocode">
-                <label for="changetype-geocode">Geocodes</label>
-            </div>
-            <div id="strict-bounds-selector" class="pac-controls">
+                            <!-- <input type="radio" name="type" id="changetype-geocode">
+                <label for="changetype-geocode">Geocodes</label> -->
+                        </div>
+                        <!-- <div id="strict-bounds-selector" class="pac-controls">
                 <input type="checkbox" id="use-strict-bounds" value="">
                 <label for="use-strict-bounds">Strict Bounds</label>
+            </div> -->
+                    </div>
+                    <div id="pac-container">
+                        <input id="pac-input" type="text" placeholder="Search for a location">
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="pac-container">
-            <input id="pac-input" type="text" placeholder="Enter a location">
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Map -->
+                <div id="map"></div>
+                <div id="infowindow-content">
+                    <img src="" width="16" height="16" id="place-icon">
+                    <span id="place-name" class="title"></span><br>
+                    <span id="place-address"></span>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- Footer -->
+        <footer>
+            <p>Modesto ❤️ Tourism</p>
+            <p> <i href="https://www.facebook.com/modesto.cvb" class="fa fa-facebook-square 5x" aria-hidden="true"></i>
+                <i href="https://www.pinterest.com/visitmodesto/" class="fa fa-pinterest-square 5x" aria-hidden="true"></i>
+                <i  href="https://twitter.com/modestocvb" class="fa fa-twitter-square 5x" aria-hidden="true"></i> </p>
+        </footer>
 
-    <!-- Map -->
-    <div id="map"></div>
-    <div id="infowindow-content">
-        <img src="" width="16" height="16" id="place-icon">
-        <span id="place-name" class="title"></span><br>
-        <span id="place-address"></span>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>❤️ Modesto</p>
-    </footer>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </body>
 

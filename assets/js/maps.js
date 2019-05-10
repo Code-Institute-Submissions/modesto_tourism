@@ -3,14 +3,26 @@
     function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 37.639095, lng: -120.996880},
-        zoom: 13
+        zoom: 13,
+        // disables fullscreen
+        fullscreenControl: false,
+        // // disables street view
+        streetViewControl:false,
+        // disables map controls
+        mapTypeControl:false,
+        // Zoom Controls
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.TOP_RIGHT
+        },
+        
       });
       var card = document.getElementById('pac-card');
       var input = document.getElementById('pac-input');
       var types = document.getElementById('type-selector');
       var strictBounds = document.getElementById('strict-bounds-selector');
 
-      map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+      map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(card);
 
       var autocomplete = new google.maps.places.Autocomplete(input);
 

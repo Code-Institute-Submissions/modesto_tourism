@@ -1,19 +1,54 @@
-navbar {
-    margin: auto;
-    padding: 25px;
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-}
-
-body {
-    /* font-family: 'Source Sans Pro', sans-serif; */
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+ 
+.body {
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
+.jumbotron {
+    margin-top:50px
+}
+
+.motto{
+font-style: italic
+}
+
+.center {
     text-align: center;
     text-transform: capitalize;
+    padding-bottom: 10px;
+    text-align: center;
 }
-h3 {
+
+li {
+    float: none;
+    margin: 0 auto;
+    justify-content:center;
+    text-align: center;
+    list-style-type: none;
     padding-bottom: 10px;
 }
 
@@ -53,6 +88,7 @@ h3 {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     font-family: Roboto;
+    width: auto;
 }
 
 #pac-container {
@@ -79,7 +115,7 @@ h3 {
     margin: 12px;
     padding: 0 11px;
     text-overflow: ellipsis;
-    width: 400px;
+    width: auto;
 }
 
 #pac-input:focus {
