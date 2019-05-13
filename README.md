@@ -1,4 +1,4 @@
-# [Modesto Tourism](https://thestarvingcoder.github.io/modesto_tourism/index.html)
+# <a href="https://thestarvingcoder.github.io/modesto_tourism/index.html" target="_blank">Modesto Tourism</a>
 
 ## A single tourism page for people visiting Modesto using Google Maps & Places API
 
@@ -17,3 +17,7 @@ You'll want help your users:
 Photos from
 -[Algolub Photography](algolub.photoshelter.com)
 -[Wikipedia](https://en.wikipedia.org/wiki/Modesto,_California)
+
+Mockups
+-![Browser Mockup](http://https://thestarvingcoder.github.io/modesto_tourism/assets/images/Browser_Mockup.png)
+-![Phone Mockup](http://https://thestarvingcoder.github.io/modesto_tourism/assets/images/Phone_Mockup.png)
