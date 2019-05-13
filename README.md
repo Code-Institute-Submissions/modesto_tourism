@@ -19,5 +19,5 @@ Photos from
 -[Wikipedia](https://en.wikipedia.org/wiki/Modesto,_California)
 
 Mockups
--![Browser Mockup](http://https://thestarvingcoder.github.io/modesto_tourism/assets/images/Browser_Mockup.png)
--![Phone Mockup](http://https://thestarvingcoder.github.io/modesto_tourism/assets/images/Phone_Mockup.png)
+-![Browser Mockup](/assets/images/Browser_Mockup.png)
+-![Phone Mockup](/assets/images/Phone_Mockup.png)
