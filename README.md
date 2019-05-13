@@ -18,6 +18,7 @@ Photos from
 -[Algolub Photography](algolub.photoshelter.com)
 -[Wikipedia](https://en.wikipedia.org/wiki/Modesto,_California)
 
-Mockups
--![Browser Mockup](/assets/images/Browser_Mockup.png)
--![Phone Mockup](/assets/images/Phone_Mockup.png)
+## Mock ups
+
+![Browser Mockup](/assets/images/Browser_Mockup.png)
+![Phone Mockup](/assets/images/Phone_Mockup.png)
