@@ -99,19 +99,3 @@
             autocomplete.setOptions({strictBounds: this.checked});
           });
     };
-
-    // The marker, positioned at Vintage Fair Mall
-    // var marker = new google.maps.Marker({
-    //     position: Vintage,
-    //     map: map
-    // });
-     // The marker, positioned at Modesto Jr College
-    //  var marker = new google.maps.Marker({
-    //     position: MJC,
-    //     map: map
-    // });
-       // The marker, positioned at Train Station
-    //    var marker = new google.maps.Marker({
-    //     position: Train,
-    //     map: map
-    // });

@@ -27,6 +27,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&callback=initMap&libraries=places"
         async defer></script>
 
+
     <!-- Code CSS -->
     <link rel="stylesheet" href="/assets/styles/style.css">
     <!--CODE Map JS -->
@@ -46,6 +47,7 @@
                 </button>
                 <a class="navbar-brand" href="https://thestarvingcoder.github.io/modesto_tourism/index.html">Modesto
                     Tourism</a> </div>
+
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <ul class="nav navbar-nav">
@@ -74,6 +76,14 @@
             <div class="col-md-12">
                 <div class="jumbotron">
                     <h1 class="center strongfont">Modesto</h1>
+
+                    <!-- Weather -->
+                    <div id="weather-container">
+                        <img class="icon">
+                        <p class="weather"></p>
+                        <p class="temp"></p>
+                    </div>
+
                     <h2 class="motto center strongfont"> Water Wealth Contentment Health</h2>
                     <!-- Ariel Image -->
                     <img class="img-rounded img-responsive"
@@ -331,7 +341,7 @@
         </div>
         <!-- Footer -->
         <footer id="contact">
-            <p>Modesto ❤️ Tourism</p>
+            <!-- <p>Modesto ❤️ Tourism</p> -->
             <p> <i href="https://www.facebook.com/modesto.cvb" class="fa fa-facebook-square blue 5x"
                     aria-hidden="true"></i>
                 <i href="https://www.pinterest.com/visitmodesto/" class="fa fa-pinterest-square 5x"
@@ -345,7 +355,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+        <!-- Weather API -->
+        <script src="/assets/js/weather.js" async defer></script>
 </body>
 
 </html>

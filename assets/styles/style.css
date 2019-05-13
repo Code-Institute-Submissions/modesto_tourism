@@ -37,6 +37,22 @@
 font-style: italic;
 }
 
+.weather-container{
+    background-color:transparent;
+    text-align: center;
+}
+
+.weather {
+    font-size: 22px;
+    margin: 0;
+}
+
+.temp {
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+}
+
 p {
     padding-top: 25px;
 }
@@ -51,11 +67,9 @@ h4 h3 {
 }
 
 .photo {
-     /* height: auto; */
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    /* width: auto; */
   }
 
   .carousel-inner > .item > img {
