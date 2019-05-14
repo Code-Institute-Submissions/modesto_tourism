@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modesto Tourism</title>
+    
     <!-- Favicon -->
     <link href="https://thestarvingcoder.github.io/modesto_tourism/assets/images/favicon.ico" rel="icon"
         type="image/x-icon" />
@@ -26,6 +27,9 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&callback=initMap&libraries=places"
         async defer></script>
+
+    <!-- Weather API -->
+    <script src="https://thestarvingcoder.github.io/modesto_tourism/assets/js/weather.js" async defer></script>
 
 </head>
 
@@ -69,20 +73,20 @@
 
     <!-- Weather Widget -->
     <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4">
-                        </div>
-                        <div class="col-md-4">
-                                <div id="openweathermap-widget-15"></div>
-                        </div>
-                        <div class="col-md-4">
-                        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <div id="openweathermap-widget-15"></div>
+                    </div>
+                    <div class="col-md-4">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!--  -->
     <div class="container-fluid" id="weather-container">
         <div class="row">
@@ -211,10 +215,10 @@
                                     alt="Graffiti Night 1985" class=" img-rounded photo">
                             </div>
 
-                             <div class="item">
+                            <div class="item">
                                 <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-023.jpg"
                                     alt="Graffiti Night 1985" class=" img-rounded photo">
-                            </div> 
+                            </div>
 
                         </div>
                     </div>
@@ -374,8 +378,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <!-- Bootstrap JS -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-            <!-- Weather API -->
-            <script src="/assets/js/weather.js" async defer></script>
+
 </body>
 
 </html>
