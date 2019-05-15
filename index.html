@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +23,8 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&callback=initMap&libraries=places"
         async defer></script>
+        <!-- Styled Map does not work yet -->
+        <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&center=47.66495064816859,-122.25085740708225&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xebe3cd&style=element:labels.text.fill%7Ccolor:0x523735&style=element:labels.text.stroke%7Ccolor:0xf5f1e6&style=feature:administrative%7Celement:geometry.stroke%7Ccolor:0xc9b2a6&style=feature:administrative.land_parcel%7Celement:geometry.stroke%7Ccolor:0xdcd2be&style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xae9e90&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x93817c&style=feature:poi.business%7Cvisibility:off&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xa5b076&style=feature:poi.park%7Celement:labels.text%7Cvisibility:off&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x447530&style=feature:road%7Celement:geometry%7Ccolor:0xf5f1e6&style=feature:road.arterial%7Celement:geometry%7Ccolor:0xfdfcf8&style=feature:road.arterial%7Celement:labels%7Cvisibility:off&style=feature:road.highway%7Celement:geometry%7Ccolor:0xf8c967&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0xe9bc62&style=feature:road.highway%7Celement:labels%7Cvisibility:off&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0xe98d58&style=feature:road.highway.controlled_access%7Celement:geometry.stroke%7Ccolor:0xdb8555&style=feature:road.local%7Cvisibility:off&style=feature:road.local%7Celement:labels%7Cvisibility:off&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x806b63&style=feature:transit.line%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:transit.line%7Celement:labels.text.fill%7Ccolor:0x8f7d77&style=feature:transit.line%7Celement:labels.text.stroke%7Ccolor:0xebe3cd&style=feature:transit.station%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:water%7Celement:geometry.fill%7Ccolor:0xb9d3c2&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x92998d&size=480x360" async defer></script>
 </head>
 
 <body>
@@ -39,12 +42,12 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="#home">Home</a></li>
-                        <li><a class="page-scroll" href="#about">About</a></li>
-                        <li><a class="page-scroll" href="#photos">Photos</a></li>
-                        <li><a class="page-scroll" href="#events">Events</a></li>
-                        <li><a class="page-scroll" href="#mapsection">Map</a></li>
-                        <li><a class="page-scroll" href="#contact">Contact Us</a></li>
+                    <li><a class="page-scroll" href="#home">Home</a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#photos">Photos</a></li>
+                    <li><a class="page-scroll" href="#events">Events</a></li>
+                    <li><a class="page-scroll" href="#mapsection">Map</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -62,102 +65,126 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                        <!-- <div id="openweathermap-widget-15"></div> -->
-                                <div id="openweathermap-widget-15"><div id="container-openweathermap-widget-15"><link href="//openweathermap.org/themes/openweathermap/assets/vendor/owm/css/openweathermap-widget-right.min.css" rel="stylesheet"><div class="widget-center weather-center--type1 widget-right--brown">
-                            <div class="widget-right__header widget-right__header--brown">
-                              <div class="widget-right__layout">
-                                <div>
-                                  <h2 class="widget-right__title">Modesto, US</h2>
-                                  <p class="widget-right__description">clear sky</p>
+                    <!-- <div id="openweathermap-widget-15"></div> -->
+                    <div id="openweathermap-widget-15">
+                        <div id="container-openweathermap-widget-15">
+                            <link
+                                href="//openweathermap.org/themes/openweathermap/assets/vendor/owm/css/openweathermap-widget-right.min.css"
+                                rel="stylesheet">
+                            <div class="widget-center weather-center--type1 widget-right--brown">
+                                <div class="widget-right__header widget-right__header--brown">
+                                    <div class="widget-right__layout">
+                                        <div>
+                                            <h2 class="widget-right__title">Modesto, US</h2>
+                                            <p class="widget-right__description">clear sky</p>
+                                        </div>
+                                    </div><img
+                                        src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/01d.png"
+                                        width="128" height="128" alt="Weather in Modesto, US"
+                                        class="weather-right__icon weather-right__icon--type1">
                                 </div>
-                              </div><img src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/01d.png" width="128" height="128" alt="Weather in Modesto, US" class="weather-right__icon weather-right__icon--type1">
-                            </div>
-                            <div class="weather-right weather-right--brown">
-                              <div class="weather-right__layout">
-                                <div class="weather-right__temperature">76<span>°F</span></div>
-                                <div class="weather-right__weather">
-                                  <div class="weather-right-card">
-                                    <table class="weather-right__table">
-                                      <tbody><tr class="weather-right__items">
-                                        <th colspan="2" class="weather-right__item">Details</th>
-                                      </tr>
-                                      <tr class="weather-right__items">
-                                        <td class="weather-right__item">Feels like</td>
-                                        <td class="weather-right__item weather-right__feels">76<span>°F</span></td>
-                                      </tr>
-                                      <tr class="weather-right__items">
-                                        <td class="weather-right__item">Wind</td>
-                                        <td class="weather-right__item weather-right__wind-speed">10.3 m/h </td>
-                                      </tr>
-                                      <tr class="weather-right-card__items">
-                                        <td class="weather-right__item">Humidity</td>
-                                        <td class="weather-right__item weather-right__humidity">36%</td>
-                                      </tr>
-                                      <tr class="weather-right-card__items">
-                                        <td class="weather-right__item">Precip</td>
-                                        <td class="weather-right__item"></td>
-                                      </tr>
-                                      <tr class="weather-right-card__items">
-                                        <td class="weather-right__item">Pressure</td>
-                                        <td class="weather-right__item weather-right__pressure">1015 hPa</td>
-                                      </tr>
-                                    </tbody></table>
-                                  </div>
+                                <div class="weather-right weather-right--brown">
+                                    <div class="weather-right__layout">
+                                        <div class="weather-right__temperature">76<span>°F</span></div>
+                                        <div class="weather-right__weather">
+                                            <div class="weather-right-card">
+                                                <table class="weather-right__table">
+                                                    <tbody>
+                                                        <tr class="weather-right__items">
+                                                            <th colspan="2" class="weather-right__item">Details</th>
+                                                        </tr>
+                                                        <tr class="weather-right__items">
+                                                            <td class="weather-right__item">Feels like</td>
+                                                            <td class="weather-right__item weather-right__feels">
+                                                                76<span>°F</span></td>
+                                                        </tr>
+                                                        <tr class="weather-right__items">
+                                                            <td class="weather-right__item">Wind</td>
+                                                            <td class="weather-right__item weather-right__wind-speed">
+                                                                10.3 m/h </td>
+                                                        </tr>
+                                                        <tr class="weather-right-card__items">
+                                                            <td class="weather-right__item">Humidity</td>
+                                                            <td class="weather-right__item weather-right__humidity">36%
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="weather-right-card__items">
+                                                            <td class="weather-right__item">Precip</td>
+                                                            <td class="weather-right__item"></td>
+                                                        </tr>
+                                                        <tr class="weather-right-card__items">
+                                                            <td class="weather-right__item">Pressure</td>
+                                                            <td class="weather-right__item weather-right__pressure">1015
+                                                                hPa</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                                <div class="widget-right__footer widget-right__footer--brown">
+                                    <div class="widget-right__layout"><a href="//openweathermap.org/" target="_blank"
+                                            class="widget-right__link">OpenWeatherMap</a>
+                                        <div class="widget-right__date">14:42 May 14</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="widget-right__footer widget-right__footer--brown">
-                              <div class="widget-right__layout"><a href="//openweathermap.org/" target="_blank" class="widget-right__link">OpenWeatherMap</a>
-                                <div class="widget-right__date">14:42 May 14</div>
-                              </div>
-                            </div>
-                          </div><script>
-                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        
-                 ga('create', 'UA1601618-11', 'auto');
-                 ga('send', 'pageview');
-        
-                </script>
-                </div>
-            </div>
+                            <script>
+                                (function (i, s, o, g, r, a, m) {
+                                    i['GoogleAnalyticsObject'] = r;
+                                    i[r] = i[r] || function () {
+                                        (i[r].q = i[r].q || []).push(arguments)
+                                    }, i[r].l = 1 * new Date();
+                                    a = s.createElement(o),
+                                        m = s.getElementsByTagName(o)[0];
+                                    a.async = 1;
+                                    a.src = g;
+                                    m.parentNode.insertBefore(a, m)
+                                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                                ga('create', 'UA1601618-11', 'auto');
+                                ga('send', 'pageview');
+                            </script>
+                        </div>
                     </div>
-                    
                 </div>
+
             </div>
         </div>
+    </div>
 
     <!-- Container -->
     <div class="container-fluid" id="about">
         <div class="row">
             <div class="col-md-12">
                 <div class="jumbotron">
-
                     <h1 class="center ">Modesto, California</h1>
                     <h2 class="motto center "> Water Wealth Contentment Health</h2>
                     <div class="container-fluid">
-
-
                         <!-- Ariel Image -->
                         <img class="img-rounded img-responsive"
                             src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Modesto_California_photo_D_Ramey_Logan.jpg"
                             alt="Modesto Ariel">
 
-
-
                         <!-- Info -->
                         <p>
-                                Modesto is a vibrant community proud of its citizens, great traditions, educational opportunities, and multicultural lifestyles. Modesto is blessed year round with mild weather and some of the world's richest soil.
+                            Modesto is a vibrant community proud of its citizens, great traditions, educational
+                            opportunities, and multicultural lifestyles. Modesto is blessed year round with mild weather
+                            and some of the world's richest soil.
                         </p>
                         <p>
-                                Modesto offers the diversity and facilities of a metropolitan city, but still maintains an atmosphere of old fashioned hospitality. Modesto is the 16th largest city in California with a population exceeding 210,000 people and is also the seat of Stanislaus County.
+                            Modesto offers the diversity and facilities of a metropolitan city, but still maintains an
+                            atmosphere of old fashioned hospitality. Modesto is the 16th largest city in California with
+                            a population exceeding 210,000 people and is also the seat of Stanislaus County.
                         </p>
                         <p>
-                                Please take of advantage of our many amenities. Play a round of golf, picnic in one of our many parks, explore our antique shops or visit one of our museums. If you are a little more adventurous try nearby river rafting, hiking or jet skiing.
+                            Please take of advantage of our many amenities. Play a round of golf, picnic in one of our
+                            many parks, explore our antique shops or visit one of our museums. If you are a little more
+                            adventurous try nearby river rafting, hiking or jet skiing.
 
-                                Whatever you choose you will have the opportunity to enjoy all of the “Water, Wealth, Contentment, Health” that Modesto has to offer.
+                            Whatever you choose you will have the opportunity to enjoy all of the “Water, Wealth,
+                            Contentment, Health” that Modesto has to offer.
                         </p>
                         <!-- Lists -->
                         <div class="container-fluid center">
@@ -166,27 +193,37 @@
                                     <h3> Accommodations:</h3>
                                     <ul>
                                         <li><a href="https://apexinnmodesto.com/" target="_blank">Apex Inn</a></li>
-                                        <li><a href="https://www.bestwestern.com/en_US/book/hotel-rooms.05703.html?iata=00171880&ssob=BLBWI0004G&cid=BLBWI0004G:google:gmb:05703" target="_blank">Best Western Palm Court Inn</a></li>
-                                        <li><a href="https://www.choicehotels.com/california/modesto/clarion-hotels/cac38?source=gyxt" target="_blank">Clarion Hotel and Conference Center</a></li>
-                                        <li><a href="https://doubletree3.hilton.com/en/hotels/california/doubletree-by-hilton-hotel-modesto-DSTO-DT/index.html?SEO_id=GMB-DT-DSTODT" target="_blank">Double Tree Hotel Modesto</a></li>
+                                        <li><a href="https://www.bestwestern.com/en_US/book/hotel-rooms.05703.html?iata=00171880&ssob=BLBWI0004G&cid=BLBWI0004G:google:gmb:05703"
+                                                target="_blank">Best Western Palm Court Inn</a></li>
+                                        <li><a href="https://www.choicehotels.com/california/modesto/clarion-hotels/cac38?source=gyxt"
+                                                target="_blank">Clarion Hotel and Conference Center</a></li>
+                                        <li><a href="https://doubletree3.hilton.com/en/hotels/california/doubletree-by-hilton-hotel-modesto-DSTO-DT/index.html?SEO_id=GMB-DT-DSTODT"
+                                                target="_blank">Double Tree Hotel Modesto</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4">
                                     <h3> Places to visit:</h3>
                                     <ul>
-                                        <li><a href="https://www.shopvintagefairemall.com/" target="_blank">Vintage fair Mall</a></li>
-                                        <li><a href="https://www.castleairmuseum.org/" target="_blank">Castle Air Museum</a></li>
-                                        <li><a href="https://www.google.com/maps/place/McHenry+Mansion,+Modesto,+CA+95354/@37.6433385,-120.9946436,21z/data=!4m13!1m7!3m6!1s0x809053f3696314d3:0xf43673e7480279cc!2sMcHenry+Mansion,+Modesto,+CA+95354!3b1!8m2!3d37.6436536!4d-120.9945121!3m4!1s0x809053f3696314d3:0xf43673e7480279cc!8m2!3d37.6436536!4d-120.9945121" target="_blank">McHenry Mansion</a></li>
-                                        <li><a href="https://www.google.com/maps/place/George+Lucas+Statue/@37.6454414,-120.9956372,17z/data=!3m1!4b1!4m5!3m4!1s0x809053f47870df15:0x6bd4cbf59050cab6!8m2!3d37.6454372!4d-120.9934485" target="_blank">Lucas Plaza Statue</a></li>
+                                        <li><a href="https://www.shopvintagefairemall.com/" target="_blank">Vintage fair
+                                                Mall</a></li>
+                                        <li><a href="https://www.castleairmuseum.org/" target="_blank">Castle Air
+                                                Museum</a></li>
+                                        <li><a href="https://www.google.com/maps/place/McHenry+Mansion,+Modesto,+CA+95354/@37.6433385,-120.9946436,21z/data=!4m13!1m7!3m6!1s0x809053f3696314d3:0xf43673e7480279cc!2sMcHenry+Mansion,+Modesto,+CA+95354!3b1!8m2!3d37.6436536!4d-120.9945121!3m4!1s0x809053f3696314d3:0xf43673e7480279cc!8m2!3d37.6436536!4d-120.9945121"
+                                                target="_blank">McHenry Mansion</a></li>
+                                        <li><a href="https://www.google.com/maps/place/George+Lucas+Statue/@37.6454414,-120.9956372,17z/data=!3m1!4b1!4m5!3m4!1s0x809053f47870df15:0x6bd4cbf59050cab6!8m2!3d37.6454372!4d-120.9934485"
+                                                target="_blank">Lucas Plaza Statue</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4">
                                     <h3> Bars and Restaurants:</h3>
                                     <ul>
-                                        <li><a href="https://www.barkindoggrill.com/" target="_blank">Barkin' Dog Grill</a></li>
+                                        <li><a href="https://www.barkindoggrill.com/" target="_blank">Barkin' Dog
+                                                Grill</a></li>
                                         <li><a href="https://www.bauhaus209.com/" target="_blank">Bauhaus 209</a></li>
-                                        <li><a href="https://www.bjsrestaurants.com/locations/ca/modesto" target="_blank">BJ's Restaurant & Brewhouse</a></li>
-                                        <li><a href="https://www.google.com/maps/place/The+Fox+Pub/@37.6404658,-121.000407,17z/data=!3m1!4b1!4m5!3m4!1s0x8090538d4ee2bc81:0x2e67d0b7acb3bea0!8m2!3d37.6404616!4d-120.9982183" target="_blank">Firkin & Fox</a></li>
+                                        <li><a href="https://www.bjsrestaurants.com/locations/ca/modesto"
+                                                target="_blank">BJ's Restaurant & Brewhouse</a></li>
+                                        <li><a href="https://www.google.com/maps/place/The+Fox+Pub/@37.6404658,-121.000407,17z/data=!3m1!4b1!4m5!3m4!1s0x8090538d4ee2bc81:0x2e67d0b7acb3bea0!8m2!3d37.6404616!4d-120.9982183"
+                                                target="_blank">Firkin & Fox</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -195,229 +232,225 @@
                 </div>
             </div>
         </div>
-</div>
-        <!-- Carousel -->
-        <div class="container-fluid center" id="photos">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="container text-center">
-                        <h2 class="center">Photos from the annual Graffiti Night</h2>
-                    </div>
-                    <!-- Bootstrap Carousel -->
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                            <li data-target="#myCarousel" data-slide-to="4"></li>
-                            <li data-target="#myCarousel" data-slide-to="5"></li>
-                            <li data-target="#myCarousel" data-slide-to="6"></li>
-                        </ol>
+    </div>
+    <!-- Carousel -->
+    <div class="container-fluid center" id="photos">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container text-center">
+                    <h2 class="center">Photos from the annual Graffiti Night</h2>
+                </div>
+                <!-- Bootstrap Carousel -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                    </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/More-T-Birds_2048x2048.jpg"
-                                    alt="T birds" class="img-rounded photo">
-                            </div>
-
-                            <div class="item">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1981-030.jpg"
-                                    alt="Graffiti Night 1981 snake" class="img-rounded photo">
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-012.jpg"
-                                    alt="Graffiti Night 1985 curbside" class=" img-rounded photo">
-                            </div>
-
-                            <div class="item">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-013.jpg"
-                                    alt="Graffiti Night 1981 top down" class=" img-rounded photo">
-                            </div>
-
-                            <div class="item">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-014.jpg"
-                                    alt="Graffiti Night 1985 ledge couple" class=" img-rounded photo">
-                            </div>
-
-                            <div class="item">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-017.jpg"
-                                    alt="Graffiti Night 1985 top down four" class=" img-rounded photo">
-                            </div>
-
-                            <div class="item">
-                                <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-023.jpg"
-                                    alt="Graffiti Night 1985 motorcycle" class=" img-rounded photo">
-                            </div>
-
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/More-T-Birds_2048x2048.jpg"
+                                alt="T birds" class="img-rounded photo">
                         </div>
-                    </div>
-                    <p class="thanks center">Courtesy of Al Golub Photography.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Events -->
-        <div class="container-fluid" id="events">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                        <h3 class="center">Upcoming Events</h3>
-                        <table class="table table-hover table-sm table-striped">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Event
-                                    </th>
-                                    <th>
-                                        Date
-                                    </th>
-                                    <th>
-                                        Location
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        "The American Soldier" a solo play
-                                    </td>
-                                    <td>
-                                        5/1/2019
-                                    </td>
-                                    <td>
-                                        State Theatre
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        1st Annual Chef & Survivor Team Chili Cook Off
-                                    </td>
-                                    <td>
-                                        5/1/2019
-                                    </td>
-                                    <td>
-                                        Institute of Technology
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        Technology + Innovation Conference
-                                    </td>
-                                    <td>
-                                        5/2/2019
-                                    </td>
-                                    <td>
-                                        Doubletree Hotel
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        Jonansen Spring Concert
-                                    </td>
-                                    <td>
-                                        5/2/2019
-                                    </td>
-                                    <td>
-                                        Johansen High School
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        Music in the Plaza
-                                    </td>
-                                    <td>
-                                        5/3/2019
-                                    </td>
-                                    <td>
-                                        10th Street Plaza
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-                        
-
-        
-        <!-- Auto Complete -->
-        <div class="container-fluid" id="mapsection">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pac-card" id="pac-card">
-                        <div class="">
-                            <div id="title">
-                Search
-            </div>
-                            <div id="type-selector" class="pac-controls">
-                                <input type="radio" name="type" id="changetype-all" checked="checked">
-                                <label for="changetype-all">All</label>
-
-                                <input type="radio" name="type" id="changetype-establishment">
-                                <label for="changetype-establishment">Establishments</label>
-
-                                <input type="radio" name="type" id="changetype-address">
-                                <label for="changetype-address">Addresses</label>
-
-                                <!-- <input type="radio" name="type" id="changetype-geocode">
-                <label for="changetype-geocode">Geocodes</label> -->
+                        <div class="item">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1981-030.jpg"
+                                alt="Graffiti Night 1981 snake" class="img-rounded photo">
+                            <div class="carousel-caption">
                             </div>
-                            <!-- <div id="strict-bounds-selector" class="pac-controls">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-012.jpg"
+                                alt="Graffiti Night 1985 curbside" class=" img-rounded photo">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-013.jpg"
+                                alt="Graffiti Night 1981 top down" class=" img-rounded photo">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-014.jpg"
+                                alt="Graffiti Night 1985 ledge couple" class=" img-rounded photo">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-017.jpg"
+                                alt="Graffiti Night 1985 top down four" class=" img-rounded photo">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-023.jpg"
+                                alt="Graffiti Night 1985 motorcycle" class=" img-rounded photo">
+                        </div>
+
+                    </div>
+                </div>
+                <p class="thanks center">Courtesy of Al Golub Photography.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events -->
+    <div class="container-fluid" id="events">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h3 class="center">Upcoming Events</h3>
+                    <table class="table table-hover table-sm table-striped">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Event
+                                </th>
+                                <th>
+                                    Date
+                                </th>
+                                <th>
+                                    Location
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    "The American Soldier" a solo play
+                                </td>
+                                <td>
+                                    5/1/2019
+                                </td>
+                                <td>
+                                    State Theatre
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    1st Annual Chef & Survivor Team Chili Cook Off
+                                </td>
+                                <td>
+                                    5/1/2019
+                                </td>
+                                <td>
+                                    Institute of Technology
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Technology + Innovation Conference
+                                </td>
+                                <td>
+                                    5/2/2019
+                                </td>
+                                <td>
+                                    Doubletree Hotel
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Jonansen Spring Concert
+                                </td>
+                                <td>
+                                    5/2/2019
+                                </td>
+                                <td>
+                                    Johansen High School
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Music in the Plaza
+                                </td>
+                                <td>
+                                    5/3/2019
+                                </td>
+                                <td>
+                                    10th Street Plaza
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auto Complete -->
+    <div class="container-fluid" id="mapsection">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pac-card" id="pac-card">
+                    <div class="">
+                        <div id="title">
+                            Search
+                        </div>
+                        <div id="type-selector" class="pac-controls">
+                            <input type="radio" name="type" id="changetype-all" checked="checked">
+                            <label for="changetype-all">All</label>
+
+                            <input type="radio" name="type" id="changetype-establishment">
+                            <label for="changetype-establishment">Establishments</label>
+
+                            <input type="radio" name="type" id="changetype-address">
+                            <label for="changetype-address">Addresses</label>
+
+                            <!-- <input type="radio" name="type" id="changetype-geocode">
+                <label for="changetype-geocode">Geocodes</label> -->
+                        </div>
+                        <!-- <div id="strict-bounds-selector" class="pac-controls">
                 <input type="checkbox" id="use-strict-bounds" value="">
                 <label for="use-strict-bounds">Strict Bounds</label>
             </div> -->
-                        </div>
-                        <div id="pac-container">
-                            <input id="pac-input" type="text" placeholder="Search for a location">
-                        </div>
+                    </div>
+                    <div id="pac-container">
+                        <input id="pac-input" type="text" placeholder="Search for a location">
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Map -->
-                    <div id="map"></div>
-                    <div id="infowindow-content">
-                        <img src="" width="16" height="16" id="place-icon" alt="map">
-                        <span id="place-name" class="title"></span><br>
-                        <span id="place-address"></span>
-                    </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Map -->
+                <div id="map"></div>
+                <div id="infowindow-content">
+                    <img src="" width="16" height="16" id="place-icon" alt="map">
+                    <span id="place-name" class="title"></span><br>
+                    <span id="place-address"></span>
                 </div>
             </div>
-            </div>
+        </div>
+    </div>
 
-            <!-- Footer -->
-            <footer id="contact">
-                <!-- <p>Modesto ❤️ Tourism</p> -->
-                <p> <i class="fa fa-facebook-square blue 5x"
-                        aria-hidden="true"></i>
-                    <i class="fa fa-pinterest-square 5x"
-                        aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square 5x" aria-hidden="true"></i>
-                </p>
-            </footer>
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- <p>Modesto ❤️ Tourism</p> -->
+        <p> <i class="fa fa-facebook-square blue 5x" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square 5x" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square 5x" aria-hidden="true"></i>
+        </p>
+    </footer>
 
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-            <!-- JQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <!-- Bootstrap JS -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-                <!-- Weather API -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Weather API -->
     <script src="https://thestarvingcoder.github.io/modesto_tourism/assets/js/weather.js" async defer></script>
 
 </body>
