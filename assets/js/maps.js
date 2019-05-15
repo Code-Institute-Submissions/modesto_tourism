@@ -4,6 +4,7 @@
       var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 37.639095, lng: -120.996880},
         zoom: 13,
+        
         // disables fullscreen
         fullscreenControl: false,
         // // disables street view
@@ -91,7 +92,7 @@
       setupClickListener('changetype-all', []);
       setupClickListener('changetype-address', ['address']);
       setupClickListener('changetype-establishment', ['establishment']);
-      setupClickListener('changetype-geocode', ['geocode']);
+      // setupClickListener('changetype-geocode', ['geocode']);
 
       document.getElementById('use-strict-bounds')
           .addEventListener('click', function() {
