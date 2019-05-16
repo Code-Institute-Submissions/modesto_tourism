@@ -90,15 +90,6 @@
           },
           {
             "featureType": "administrative.land_parcel",
-            "elementType": "labels",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
-            "featureType": "administrative.land_parcel",
             "elementType": "labels.text.fill",
             "stylers": [
               {
@@ -126,27 +117,10 @@
           },
           {
             "featureType": "poi",
-            "elementType": "labels.text",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
-            "featureType": "poi",
             "elementType": "labels.text.fill",
             "stylers": [
               {
                 "color": "#93817c"
-              }
-            ]
-          },
-          {
-            "featureType": "poi.business",
-            "stylers": [
-              {
-                "visibility": "off"
               }
             ]
           },
@@ -156,15 +130,6 @@
             "stylers": [
               {
                 "color": "#a5b076"
-              }
-            ]
-          },
-          {
-            "featureType": "poi.park",
-            "elementType": "labels.text",
-            "stylers": [
-              {
-                "visibility": "off"
               }
             ]
           },
@@ -196,15 +161,6 @@
             ]
           },
           {
-            "featureType": "road.arterial",
-            "elementType": "labels",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
             "featureType": "road.highway",
             "elementType": "geometry",
             "stylers": [
@@ -223,15 +179,6 @@
             ]
           },
           {
-            "featureType": "road.highway",
-            "elementType": "labels",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
             "featureType": "road.highway.controlled_access",
             "elementType": "geometry",
             "stylers": [
@@ -246,23 +193,6 @@
             "stylers": [
               {
                 "color": "#db8555"
-              }
-            ]
-          },
-          {
-            "featureType": "road.local",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
-            "featureType": "road.local",
-            "elementType": "labels",
-            "stylers": [
-              {
-                "visibility": "off"
               }
             ]
           },
