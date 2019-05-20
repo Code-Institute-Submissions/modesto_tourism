@@ -4,7 +4,7 @@
     var markers = [];
 
     // ====================Object Data of Locations to Show on the Map====================
-    let locations = [{
+    var locations = [{
           // Restaurants
           country: 'US',
           type: 'Restaurant',
@@ -432,4 +432,4 @@
                 strictBounds: this.checked
               });
             });  
-        };
+          }];
