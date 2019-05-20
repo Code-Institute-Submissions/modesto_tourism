@@ -293,7 +293,7 @@ function initMap() {
         strictBounds: this.checked
       });
     });
-};
+}
 
 //   var marker = new google.maps.Marker({
 //     position: myLatlng,
