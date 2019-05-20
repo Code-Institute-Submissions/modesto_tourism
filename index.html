@@ -17,16 +17,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="https://thestarvingcoder.github.io/modesto_tourism/assets/styles/style.css">
-    
-    <!-- Maps and Places API -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&callback=initMap&libraries=places&center=47.65,-122.35000000000002&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xebe3cd&style=element:labels.text.fill%7Ccolor:0x523735&style=element:labels.text.stroke%7Ccolor:0xf5f1e6&style=feature:administrative%7Celement:geometry.stroke%7Ccolor:0xc9b2a6&style=feature:administrative.land_parcel%7Celement:geometry.stroke%7Ccolor:0xdcd2be&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xae9e90&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x93817c&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xa5b076&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x447530&style=feature:road%7Celement:geometry%7Ccolor:0xf5f1e6&style=feature:road.arterial%7Celement:geometry%7Ccolor:0xfdfcf8&style=feature:road.highway%7Celement:geometry%7Ccolor:0xf8c967&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0xe9bc62&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0xe98d58&style=feature:road.highway.controlled_access%7Celement:geometry.stroke%7Ccolor:0xdb8555&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x806b63&style=feature:transit.line%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:transit.line%7Celement:labels.text.fill%7Ccolor:0x8f7d77&style=feature:transit.line%7Celement:labels.text.stroke%7Ccolor:0xebe3cd&style=feature:transit.station%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:water%7Celement:geometry.fill%7Ccolor:0xb9d3c2&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x92998d&size=480x360"
-        async defer></script>
-    <!-- Styled Map does not work yet -->
-    <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&center=47.65,-122.35000000000002&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xebe3cd&style=element:labels.text.fill%7Ccolor:0x523735&style=element:labels.text.stroke%7Ccolor:0xf5f1e6&style=feature:administrative%7Celement:geometry.stroke%7Ccolor:0xc9b2a6&style=feature:administrative.land_parcel%7Celement:geometry.stroke%7Ccolor:0xdcd2be&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xae9e90&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x93817c&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xa5b076&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x447530&style=feature:road%7Celement:geometry%7Ccolor:0xf5f1e6&style=feature:road.arterial%7Celement:geometry%7Ccolor:0xfdfcf8&style=feature:road.highway%7Celement:geometry%7Ccolor:0xf8c967&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0xe9bc62&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0xe98d58&style=feature:road.highway.controlled_access%7Celement:geometry.stroke%7Ccolor:0xdb8555&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x806b63&style=feature:transit.line%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:transit.line%7Celement:labels.text.fill%7Ccolor:0x8f7d77&style=feature:transit.line%7Celement:labels.text.stroke%7Ccolor:0xebe3cd&style=feature:transit.station%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:water%7Celement:geometry.fill%7Ccolor:0xb9d3c2&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x92998d&size=480x360" async defer></script>
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&callback=initMap">
+    </script>
     <!--  Map JS -->
-    <script src="https://thestarvingcoder.github.io/modesto_tourism/assets/js/maps.js"></script>
+    <script src="./assets/js/maps.js"></script>
 </head>
+
 
 <body>
     <!-- Navbar -->
@@ -414,13 +411,13 @@
                             <input type="radio" name="type" id="changetype-address">
                             <label for="changetype-address">Addresses</label>
 
-                            <!-- <input type="radio" name="type" id="changetype-geocode">
-                <label for="changetype-geocode">Geocodes</label> -->
+                            <input type="radio" name="type" id="changetype-geocode">
+                            <label for="changetype-geocode">Geocodes</label>
                         </div>
-                        <!-- <div id="strict-bounds-selector" class="pac-controls">
-                <input type="checkbox" id="use-strict-bounds" value="">
-                <label for="use-strict-bounds">Strict Bounds</label>
-            </div> -->
+                        <div id="strict-bounds-selector" class="pac-controls">
+                            <input type="checkbox" id="use-strict-bounds" value="">
+                            <label for="use-strict-bounds">Strict Bounds</label>
+                        </div>
                     </div>
                     <div id="pac-container">
                         <input id="pac-input" type="text" placeholder="Search for a location">
@@ -429,11 +426,11 @@
             </div>
         </div>
     </div>
-    <!-- <br> -->
+    <br>
+    <!-- Map -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <!-- Map -->
                 <div id="map"></div>
                 <div id="infowindow-content">
                     <img src="" width="16" height="16" id="place-icon" alt="map">
@@ -460,7 +457,8 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Weather API -->
-    <script src="https://thestarvingcoder.github.io/modesto_tourism/assets/js/weather.js" async defer></script>
+    <script src="https://thestarvingcoder.github.io/modesto_tourism/assets/js/weather.js"></script>
+
 
 </body>
 
