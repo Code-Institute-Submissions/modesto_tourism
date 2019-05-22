@@ -81,5 +81,12 @@ Photos from
 
 ## Mock ups
 
-![Browser Mockup](/assets/images/Browser_Mockup.png)
-![Phone Mockup](/assets/images/Phone_Mockup.png)
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modesto Tourism</title>
+    <title>California Tourism</title>
     <!-- Favicon -->
     <link href="https://thestarvingcoder.github.io/modesto_tourism/assets/images/favicon.ico" rel="icon"
         type="image/x-icon" />
@@ -16,7 +16,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://thestarvingcoder.github.io/modesto_tourism/assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <!--  Map JS -->
     <script src="./assets/js/maps.js"></script>
 
@@ -24,371 +24,519 @@
 
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="https://thestarvingcoder.github.io/modesto_tourism/index.html">Modesto
-                    Tourism</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="#home">Home</a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#photos">Photos</a></li>
-                    <li><a class="page-scroll" href="#events">Events</a></li>
-                    <li><a class="page-scroll" href="#mapsection">Map</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+ <!-- nav bar code -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">Home</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="./team.html">The Team</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Big Image -->
-    <div id="home">
-        <img class="img-rounded img-responsive"
-            src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Modesto_Arch.jpg" alt="Modesto Arch">
+<h1 class="center">California Travel</h1>
+<h3 class="center">Made easy!</h3>
+<!--Travel image-->
+ <img src="./assets/images/ontheroad.jpg" alt="traveling hichhiker" class="img-responsive"></img>
+<h3 class="center">View the most popular travel destinations</h3>
+
+<!--Modal Grid-->
+<div class="container-fluid">
+	<div class="row">
+	    
+	    <!--Yosemite-->
+	    
+		<div class="col-md-4">
+		   
+</div>
+
+		    <!-- view modal -->
+<button class="btn btn-primary btn-modal"
+        data-toggle="modal"
+        data-target="#fsModal">
+    <img src="./assets/images/yosemite.jpg" class="img-responsive img-rounded"></img>
+  Yosemite Details
+</button>
+<!-- view modal -->
+
+<!-- modal -->
+<div id="fsModal"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+  <!-- dialog -->
+  <div class="modal-dialog">
+
+    <!-- content -->
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          Yosemite National Park Details
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+        <h2>Parks, Campgrounds, Hiking</h2>
+<img src="./assets/images/yosemite.jpg" class="img-responsive img-rounded"></img>
+        <p>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
+
+First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</p>
+
+        <h2>2. Modal sub-title</h2>
+
+        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+
+        <h2>Get in touch</h2>
+
+        <p>Mailing Address:
+PO Box 577 
+Yosemite National Park, CA 95389</p>
+<p>
+Phone:
+(209) 372-0200</p>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        <button class="btn btn-default">
+          Default
+        </button>
+        <button class="btn btn-primary">
+          Primary
+        </button>
+      </div>
+      <!-- footer -->
 
     </div>
+    <!-- content -->
 
-    <!-- Weather Widget -->
-    <div class="container-fluid weather-container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <!-- <div id="openweathermap-widget-15"></div> -->
-                    <div id="openweathermap-widget-15">
-                        <div id="container-openweathermap-widget-15">
-                            <link
-                                href="//openweathermap.org/themes/openweathermap/assets/vendor/owm/css/openweathermap-widget-right.min.css"
-                                rel="stylesheet">
-                            <div class="widget-center weather-center--type1 widget-right--brown">
-                                <div class="widget-right__header widget-right__header--brown">
-                                    <div class="widget-right__layout">
-                                        <div>
-                                            <h2 class="widget-right__title">Modesto, US</h2>
-                                            <p class="widget-right__description">clear sky</p>
-                                        </div>
-                                    </div><img
-                                        src="//openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/01d.png"
-                                        width="128" height="128" alt="Weather in Modesto, US"
-                                        class="weather-right__icon weather-right__icon--type1">
-                                </div>
-                                <div class="weather-right weather-right--brown">
-                                    <div class="weather-right__layout">
-                                        <div class="weather-right__temperature">76<span>°F</span></div>
-                                        <div class="weather-right__weather">
-                                            <div class="weather-right-card">
-                                                <table class="weather-right__table">
-                                                    <tbody>
-                                                        <tr class="weather-right__items">
-                                                            <th colspan="2" class="weather-right__item">Details</th>
-                                                        </tr>
-                                                        <tr class="weather-right__items">
-                                                            <td class="weather-right__item">Feels like</td>
-                                                            <td class="weather-right__item weather-right__feels">
-                                                                76<span>°F</span></td>
-                                                        </tr>
-                                                        <tr class="weather-right__items">
-                                                            <td class="weather-right__item">Wind</td>
-                                                            <td class="weather-right__item weather-right__wind-speed">
-                                                                10.3 m/h </td>
-                                                        </tr>
-                                                        <tr class="weather-right-card__items">
-                                                            <td class="weather-right__item">Humidity</td>
-                                                            <td class="weather-right__item weather-right__humidity">36%
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="weather-right-card__items">
-                                                            <td class="weather-right__item">Precip</td>
-                                                            <td class="weather-right__item"></td>
-                                                        </tr>
-                                                        <tr class="weather-right-card__items">
-                                                            <td class="weather-right__item">Pressure</td>
-                                                            <td class="weather-right__item weather-right__pressure">1015
-                                                                hPa</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-right__footer widget-right__footer--brown">
-                                    <div class="widget-right__layout"><a href="//openweathermap.org/" target="_blank"
-                                            class="widget-right__link">OpenWeatherMap</a>
-                                        <div class="widget-right__date">14:42 May 14</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <script>
-                                (function (i, s, o, g, r, a, m) {
-                                    i['GoogleAnalyticsObject'] = r;
-                                    i[r] = i[r] || function () {
-                                        (i[r].q = i[r].q || []).push(arguments)
-                                    }, i[r].l = 1 * new Date();
-                                    a = s.createElement(o),
-                                        m = s.getElementsByTagName(o)[0];
-                                    a.async = 1;
-                                    a.src = g;
-                                    m.parentNode.insertBefore(a, m)
-                                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  </div>
+  <!-- dialog -->
 
-                                ga('create', 'UA1601618-11', 'auto');
-                                ga('send', 'pageview');
-                            </script>
-                        </div>
-                    </div>
-                </div>
+</div>
+<!-- modal -->
 
-            </div>
-        </div>
+		</div>
+		
+		<!--Hollywood-->
+		<div class="col-md-4">
+		    <!-- view modal -->
+<button class="btn btn-primary btn-modal"
+        data-toggle="modal"
+        data-target="#fsModal2">
+    <img src="./assets/images/hollywood.jpg" class="img-responsive img-rounded"></img>
+Hollywood Details
+</button>
+<!-- view modal -->
+
+<!-- modal -->
+<div id="fsModal2"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+  <!-- dialog -->
+  <div class="modal-dialog">
+
+    <!-- content -->
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          Hollywood Details
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+        <h2>La la Land</h2>
+<img src="./assets/images/hollywood.jpg" class="img-responsive"></img>
+        <p>Hollywood is a neighborhood in the central region of Los Angeles, California, notable as the home of the U.S. film industry, including several of its historic studios.Its name has come to be a shorthand reference for the industry and the people associated with it.</p>
+
+        <h2>Events</h2>
+
+        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+
+        <h2>Get in Touch</h2>
+
+        <p>Pisco sour daiquiri lejon bruichladdich mickey slim sea breeze wolfram kensington court special: pink lady white lady or delilah. Pisco sour glen spey, courvoisier j & b metaxas glenlivet tormore chupacabra, sambuca lorraine knockdhu gin and tonic margarita schenley's." Bumbo glen ord the macallan balvenie lemon split presbyterian old rip van winkle paradise gin sling. Myers black bison metaxa caridan linkwood three wise men blue hawaii wine cooler?" Talisker moonwalk cosmopolitan wolfram zurracapote glen garioch patron saketini brandy alexander, singapore sling polmos krakow golden dream. Glenglassaugh usher's wolfram mojito ramos gin fizz; cactus jack. Mai-tai leite de onça bengal; crown royal absolut allt-á-bhainne jungle juice bacardi benrinnes, bladnoch. Cointreau four horsemen aultmore, "the amarosa cocktail vodka gimlet ardbeg southern comfort salmiakki koskenkorva."</p>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        <button class="btn btn-default">
+          Default
+        </button>
+        <button class="btn btn-primary">
+          Primary
+        </button>
+      </div>
+      <!-- footer -->
+
     </div>
+    <!-- content -->
 
-    <!-- Container -->
-    <div class="container-fluid" id="about">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <h1 class="center ">Modesto, California</h1>
-                    <h2 class="motto center "> Water Wealth Contentment Health</h2>
-                    <div class="container-fluid">
-                        <!-- Ariel Image -->
-                        <img class="img-rounded img-responsive"
-                            src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Modesto_California_photo_D_Ramey_Logan.jpg"
-                            alt="Modesto Ariel">
+  </div>
+  <!-- dialog -->
 
-                        <!-- Info -->
-                        <p>
-                            Modesto is a vibrant community proud of its citizens, great traditions, educational
-                            opportunities, and multicultural lifestyles. Modesto is blessed year round with mild weather
-                            and some of the world's richest soil.
-                        </p>
-                        <p>
-                            Modesto offers the diversity and facilities of a metropolitan city, but still maintains an
-                            atmosphere of old fashioned hospitality. Modesto is the 16th largest city in California with
-                            a population exceeding 210,000 people and is also the seat of Stanislaus County.
-                        </p>
-                        <p>
-                            Please take of advantage of our many amenities. Play a round of golf, picnic in one of our
-                            many parks, explore our antique shops or visit one of our museums. If you are a little more
-                            adventurous try nearby river rafting, hiking or jet skiing.
+</div>
+<!-- modal -->
+		</div>
+		
+		<!--Big Sur-->
+		<div class="col-md-4">
+		    <!-- view modal -->
+<button class="btn btn-primary btn-modal"
+        data-toggle="modal"
+        data-target="#fsModal3">
+    <img src="./assets/images/big-sur.jpg" class="img-responsive img-rounded"></img>
+  Big Sur Details
+</button>
+<!-- view modal -->
 
-                            Whatever you choose you will have the opportunity to enjoy all of the “Water, Wealth,
-                            Contentment, Health” that Modesto has to offer.
-                        </p>
-                        <!-- Lists -->
-                        <div class="container-fluid center">
-                            <div class="row">
-                                <div class="col-md-4 ">
-                                    <img src="./assets/images/hotel-icon.png"></img>
-                                    <h3> Accommodations:</h3>
-                                    <ul>
-                                        <li><a href="https://apexinnmodesto.com/" target="_blank">Apex Inn</a></li>
-                                        <li><a href="https://www.bestwestern.com/en_US/book/hotel-rooms.05703.html?iata=00171880&ssob=BLBWI0004G&cid=BLBWI0004G:google:gmb:05703"
-                                                target="_blank">Best Western Palm Court Inn</a></li>
-                                        <li><a href="https://www.choicehotels.com/california/modesto/clarion-hotels/cac38?source=gyxt"
-                                                target="_blank">Clarion Hotel and Conference Center</a></li>
-                                        <li><a href="https://doubletree3.hilton.com/en/hotels/california/doubletree-by-hilton-hotel-modesto-DSTO-DT/index.html?SEO_id=GMB-DT-DSTODT"
-                                                target="_blank">Double Tree Hotel Modesto</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="./assets/images/tourist-attraction-icon.png"></img>
-                                    <h3> Places to visit:</h3>
-                                    <ul>
-                                        <li><a href="https://www.shopvintagefairemall.com/" target="_blank"
-                                                rel="noopener">Vintage fair
-                                                Mall</a></li>
-                                        <li><a href="https://www.castleairmuseum.org/" target="_blank"
-                                                rel="noopener">Castle Air
-                                                Museum</a></li>
-                                        <li><a href="https://www.google.com/maps/place/McHenry+Mansion,+Modesto,+CA+95354/@37.6433385,-120.9946436,21z/data=!4m13!1m7!3m6!1s0x809053f3696314d3:0xf43673e7480279cc!2sMcHenry+Mansion,+Modesto,+CA+95354!3b1!8m2!3d37.6436536!4d-120.9945121!3m4!1s0x809053f3696314d3:0xf43673e7480279cc!8m2!3d37.6436536!4d-120.9945121"
-                                                target="_blank" rel="noopener">McHenry Mansion</a></li>
-                                        <li><a href="https://www.google.com/maps/place/George+Lucas+Statue/@37.6454414,-120.9956372,17z/data=!3m1!4b1!4m5!3m4!1s0x809053f47870df15:0x6bd4cbf59050cab6!8m2!3d37.6454372!4d-120.9934485"
-                                                target="_blank" rel="noopener">Lucas Plaza Statue</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="./assets/images/restaurant-icon.png"></img>
-                                    <h3> Bars and Restaurants:</h3>
-                                    <ul>
-                                        <li><a href="https://www.barkindoggrill.com/" target="_blank"
-                                                rel="noopener">Barkin' Dog
-                                                Grill</a></li>
-                                        <li><a href="https://www.bauhaus209.com/" target="_blank" rel="noopener">Bauhaus
-                                                209</a></li>
-                                        <li><a href="https://www.bjsrestaurants.com/locations/ca/modesto"
-                                                target="_blank" rel="noopener">BJ's Restaurant & Brewhouse</a></li>
-                                        <li><a href="https://www.google.com/maps/place/The+Fox+Pub/@37.6404658,-121.000407,17z/data=!3m1!4b1!4m5!3m4!1s0x8090538d4ee2bc81:0x2e67d0b7acb3bea0!8m2!3d37.6404616!4d-120.9982183"
-                                                target="_blank" rel="noopener">Firkin & Fox</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- modal -->
+<div id="fsModal3"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+  <!-- dialog -->
+  <div class="modal-dialog">
+
+    <!-- content -->
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          Big Sur
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+        <h2>1. Modal sub-title</h2>
+<img src="./assets/images/big-sur.jpg" class="img-responsive"></img>
+        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog tonic and tequila."</p>
+
+        <h2>2. Modal sub-title</h2>
+
+        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+
+        <h2>3. Modal sub-title</h2>
+
+        <p>Pisco sour daiquiri lejon bruichladdich mickey slim sea breeze wolfram kensington court special: pink lady white lady or delilah. Pisco sour glen spey, courvoisier j & b metaxas glenlivet tormore chupacabra, sambuca lorraine knockdhu gin and tonic margarita schenley's." Bumbo glen ord the macallan balvenie lemon split presbyterian old rip van winkle paradise gin sling. Myers black bison metaxa caridan linkwood three wise men blue hawaii wine cooler?" Talisker moonwalk cosmopolitan wolfram zurracapote glen garioch patron saketini brandy alexander, singapore sling polmos krakow golden dream. Glenglassaugh usher's wolfram mojito ramos gin fizz; cactus jack. Mai-tai leite de onça bengal; crown royal absolut allt-á-bhainne jungle juice bacardi benrinnes, bladnoch. Cointreau four horsemen aultmore, "the amarosa cocktail vodka gimlet ardbeg southern comfort salmiakki koskenkorva."</p>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        <button class="btn btn-default">
+          Default
+        </button>
+        <button class="btn btn-primary">
+          Primary
+        </button>
+      </div>
+      <!-- footer -->
+
     </div>
+    <!-- content -->
 
-    <!-- Carousel -->
-    <div class="container-fluid center" id="photos">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="container text-center">
-                    <h2 class="center">Photos from the annual Graffiti Night</h2>
-                </div>
-                <!-- Bootstrap Carousel -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
-                        <li data-target="#myCarousel" data-slide-to="6"></li>
-                    </ol>
+  </div>
+  <!-- dialog -->
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/More-T-Birds_2048x2048.jpg"
-                                alt="T birds" class="img-rounded photo">
-                        </div>
+</div>
+<!-- modal -->
+		</div>
+	</div>
+	<div class="row">
+	    
+	    <!--Joshua Tree-->
+		<div class="col-md-4">
+		    <!-- view modal -->
+<button class="btn btn-primary btn-modal"
+        data-toggle="modal"
+        data-target="#fsModal4">
+    <img src="./assets/images/joshua-tree.jpg" class="img-responsive img-rounded"></img>
 
-                        <div class="item">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1981-030.jpg"
-                                alt="Graffiti Night 1981 snake" class="img-rounded photo">
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
+  Joshua Tree Details
+</button>
+<!-- view modal -->
 
-                        <div class="item">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-012.jpg"
-                                alt="Graffiti Night 1985 curbside" class=" img-rounded photo">
-                        </div>
+<!-- modal -->
+<div id="fsModal4"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
 
-                        <div class="item">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-013.jpg"
-                                alt="Graffiti Night 1981 top down" class=" img-rounded photo">
-                        </div>
+  <!-- dialog -->
+  <div class="modal-dialog">
 
-                        <div class="item">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-014.jpg"
-                                alt="Graffiti Night 1985 ledge couple" class=" img-rounded photo">
-                        </div>
+    <!-- content -->
+    <div class="modal-content">
 
-                        <div class="item">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-017.jpg"
-                                alt="Graffiti Night 1985 top down four" class=" img-rounded photo">
-                        </div>
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          joshua Tree
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+        <h2>1. Modal sub-title</h2>
+<img src="./assets/images/joshua-tree.jpg" class="img-responsive"></img>
 
-                        <div class="item">
-                            <img src="https://thestarvingcoder.github.io/modesto_tourism/assets/images/Graffiti-Night-1985-023.jpg"
-                                alt="Graffiti Night 1985 motorcycle" class=" img-rounded photo">
-                        </div>
+        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog tonic and tequila."</p>
 
-                    </div>
-                </div>
-                <p class="thanks center">Courtesy of Al Golub Photography.</p>
-            </div>
-        </div>
+        <h2>2. Modal sub-title</h2>
+
+        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+
+        <h2>3. Modal sub-title</h2>
+
+        <p>Pisco sour daiquiri lejon bruichladdich mickey slim sea breeze wolfram kensington court special: pink lady white lady or delilah. Pisco sour glen spey, courvoisier j & b metaxas glenlivet tormore chupacabra, sambuca lorraine knockdhu gin and tonic margarita schenley's." Bumbo glen ord the macallan balvenie lemon split presbyterian old rip van winkle paradise gin sling. Myers black bison metaxa caridan linkwood three wise men blue hawaii wine cooler?" Talisker moonwalk cosmopolitan wolfram zurracapote glen garioch patron saketini brandy alexander, singapore sling polmos krakow golden dream. Glenglassaugh usher's wolfram mojito ramos gin fizz; cactus jack. Mai-tai leite de onça bengal; crown royal absolut allt-á-bhainne jungle juice bacardi benrinnes, bladnoch. Cointreau four horsemen aultmore, "the amarosa cocktail vodka gimlet ardbeg southern comfort salmiakki koskenkorva."</p>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        <button class="btn btn-default">
+          Default
+        </button>
+        <button class="btn btn-primary">
+          Primary
+        </button>
+      </div>
+      <!-- footer -->
+
     </div>
+    <!-- content -->
 
-    <!-- Events -->
-    <div class="container-fluid" id="events">
-        <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <h3 class="center">Upcoming Events</h3>
-                    <table class="table table-hover table-sm table-striped">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Event
-                                </th>
-                                <th>
-                                    Date
-                                </th>
-                                <th>
-                                    Location
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    "The American Soldier" a solo play
-                                </td>
-                                <td>
-                                    5/1/2019
-                                </td>
-                                <td>
-                                    State Theatre
-                                </td>
-                            </tr>
-                            <tr>
+  </div>
+  <!-- dialog -->
 
-                                <td>
-                                    1st Annual Chef & Survivor Team Chili Cook Off
-                                </td>
-                                <td>
-                                    5/1/2019
-                                </td>
-                                <td>
-                                    Institute of Technology
-                                </td>
-                            </tr>
-                            <tr>
+</div>
+<!-- modal -->
+		</div>
+		
+		<!--Death Valley-->
+		<div class="col-md-4">
+		    <!-- view modal -->
+<button class="btn btn-primary btn-modal"
+        data-toggle="modal"
+        data-target="#fsModal5">
+    <img src="./assets/images/death-valley.jpg" class="img-responsive img-rounded"></img>
 
-                                <td>
-                                    Technology + Innovation Conference
-                                </td>
-                                <td>
-                                    5/2/2019
-                                </td>
-                                <td>
-                                    Doubletree Hotel
-                                </td>
-                            </tr>
-                            <tr>
+  Death Valley Details
+</button>
+<!-- view modal -->
 
-                                <td>
-                                    Jonansen Spring Concert
-                                </td>
-                                <td>
-                                    5/2/2019
-                                </td>
-                                <td>
-                                    Johansen High School
-                                </td>
-                            </tr>
-                            <tr>
+<!-- modal -->
+<div id="fsModal5"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
 
-                                <td>
-                                    Music in the Plaza
-                                </td>
-                                <td>
-                                    5/3/2019
-                                </td>
-                                <td>
-                                    10th Street Plaza
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+  <!-- dialog -->
+  <div class="modal-dialog">
+
+    <!-- content -->
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          Death Valley
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+        <h2>1. Modal sub-title</h2>
+<img src="./assets/images/death-valley.jpg" class="img-responsive"></img>
+
+        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog tonic and tequila."</p>
+
+        <h2>2. Modal sub-title</h2>
+
+        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+
+        <h2>3. Modal sub-title</h2>
+
+        <p>Pisco sour daiquiri lejon bruichladdich mickey slim sea breeze wolfram kensington court special: pink lady white lady or delilah. Pisco sour glen spey, courvoisier j & b metaxas glenlivet tormore chupacabra, sambuca lorraine knockdhu gin and tonic margarita schenley's." Bumbo glen ord the macallan balvenie lemon split presbyterian old rip van winkle paradise gin sling. Myers black bison metaxa caridan linkwood three wise men blue hawaii wine cooler?" Talisker moonwalk cosmopolitan wolfram zurracapote glen garioch patron saketini brandy alexander, singapore sling polmos krakow golden dream. Glenglassaugh usher's wolfram mojito ramos gin fizz; cactus jack. Mai-tai leite de onça bengal; crown royal absolut allt-á-bhainne jungle juice bacardi benrinnes, bladnoch. Cointreau four horsemen aultmore, "the amarosa cocktail vodka gimlet ardbeg southern comfort salmiakki koskenkorva."</p>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        <button class="btn btn-default">
+          Default
+        </button>
+        <button class="btn btn-primary">
+          Primary
+        </button>
+      </div>
+      <!-- footer -->
+
     </div>
+    <!-- content -->
+
+  </div>
+  <!-- dialog -->
+
+</div>
+<!-- modal -->
+		</div>
+		
+		<!--Santa Cruz-->
+		<div class="col-md-4">
+		    <!-- view modal -->
+<button class="btn btn-primary btn-modal"
+        data-toggle="modal"
+        data-target="#fsModal6">
+    <img src="./assets/images/coast.jpg" class="img-responsive img-rounded"></img>
+
+  Santa Cruz Details
+</button>
+<!-- view modal -->
+
+<!-- modal -->
+<div id="fsModal6"
+     class="modal animated bounceIn"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+  <!-- dialog -->
+  <div class="modal-dialog">
+
+    <!-- content -->
+    <div class="modal-content">
+
+      <!-- header -->
+      <div class="modal-header">
+        <h1 id="myModalLabel"
+            class="modal-title">
+          Modal title
+        </h1>
+      </div>
+      <!-- header -->
+      
+      <!-- body -->
+      <div class="modal-body">
+        <h2>1. Modal sub-title</h2>
+<img src="./assets/images/coast.jpg" class="img-responsive"></img>
+
+        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog tonic and tequila."</p>
+
+        <h2>2. Modal sub-title</h2>
+
+        <p>The last word drumguish irish flag, hurricane, brandy manhattan. Lemon drop, pulteney fleischmann's seven and seven irish flag pisco sour metaxas, hayride, bellini. French 75 wolfram christian brothers, calvert painkiller, horse's neck old bushmill's gin pahit. Monte alban glendullan, edradour redline cherry herring anisette godmother, irish flag polish martini glen spey. Abhainn dearg bloody mary amaretto sour, ti punch black cossack port charlotte tequila slammer? Rum swizzle glen keith j & b sake bomb harrogate nights 7 crown! Hairy virgin tomatin lord calvert godmother wolfschmitt brass monkey aberfeldy caribou lou. Macuá, french 75 three wise men.</p>
+
+        <h2>3. Modal sub-title</h2>
+
+        <p>Pisco sour daiquiri lejon bruichladdich mickey slim sea breeze wolfram kensington court special: pink lady white lady or delilah. Pisco sour glen spey, courvoisier j & b metaxas glenlivet tormore chupacabra, sambuca lorraine knockdhu gin and tonic margarita schenley's." Bumbo glen ord the macallan balvenie lemon split presbyterian old rip van winkle paradise gin sling. Myers black bison metaxa caridan linkwood three wise men blue hawaii wine cooler?" Talisker moonwalk cosmopolitan wolfram zurracapote glen garioch patron saketini brandy alexander, singapore sling polmos krakow golden dream. Glenglassaugh usher's wolfram mojito ramos gin fizz; cactus jack. Mai-tai leite de onça bengal; crown royal absolut allt-á-bhainne jungle juice bacardi benrinnes, bladnoch. Cointreau four horsemen aultmore, "the amarosa cocktail vodka gimlet ardbeg southern comfort salmiakki koskenkorva."</p>
+
+      </div>
+      <!-- body -->
+
+      <!-- footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary"
+                data-dismiss="modal">
+          close
+        </button>
+        <button class="btn btn-default">
+          Default
+        </button>
+        <button class="btn btn-primary">
+          Primary
+        </button>
+      </div>
+      <!-- footer -->
+
+    </div>
+    <!-- content -->
+
+  </div>
+  <!-- dialog -->
+
+</div>
+<!-- modal -->
+		</div>
+	</div>
+</div>
+
+   
+  
+
+
 
     <!-- Auto Complete -->
     <div class="container-fluid" id="mapsection">
@@ -439,14 +587,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <p>Contact Us Here:</p>
-        <p> <i class="fa fa-facebook-square blue 5x" aria-hidden="true"></i>
-            <i class="fa fa-pinterest-square 5x" aria-hidden="true"></i>
-            <i class="fa fa-twitter-square 5x" aria-hidden="true"></i>
-        </p>
-    </footer>
+      <!-- Footer -->
+  <footer class="container-fluid center">
+    <i class="fa fa-facebook-square" aria-hidden="false"></i>
+    <i class="fa fa-twitter-square" aria-hidden="false"></i>
+    <i class="fa fa-instagram" aria-hidden="false"></i>
+  </footer>
+    
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
