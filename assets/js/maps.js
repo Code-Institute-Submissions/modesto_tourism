@@ -176,10 +176,11 @@ function initMap() {
 
   // Create a map object, and include the MapTypeId to add
   // to the map type control.
+  
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: 37.639095,
-      lng: -120.996880,
+      lat: 37.3467,  
+      lng: -84.8247,
     },
     zoom: 13,
     mapTypeControlOptions: {
@@ -294,118 +295,3 @@ function initMap() {
       });
     });
 }
-
-//   var marker = new google.maps.Marker({
-//     position: myLatlng,
-//     title:"Hello World!"
-// });
-
-// // To add the marker to the map, call setMap();
-// marker.setMap(map);
-
-
-// ====================Object Data of Locations to Show on the Map====================
-// var locations = [{
-//   Restaurants
-//   country: 'US',
-//   type: 'Restaurant',
-//   name: 'Barkin Dog Grill',
-//   lat: 37.640971,
-//   lng: -120.998767,
-//   iconCustom: './assets/images/restaurant-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Restaurant',
-//   name: 'Bauhaus 209',
-//   lat: 37.640730,
-//   lng: -121.002430,
-//   iconCustom: './assets/images/restaurant-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Restaurant',
-//   name: 'BJs Restaurant & Brewhouse',
-//   lat: 37.251190,
-//   lng: -121.863730,
-//   iconCustom: './assets/images/restaurant-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Restaurant',
-//   name: 'Firkin & Fox',
-//   lat: 37.6404658,
-//   lng: -121.000407,
-//   iconCustom: './assets/images/restaurant-icon.png'
-// },
-
-
-// // Accommodations
-// {
-//   country: 'US',
-//   type: 'Hotel',
-//   name: 'Apex Inn',
-//   lat: 37.6385712,
-//   lng: -120.9577713,
-//   iconCustom: './assets/images/hotel-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Hotel',
-//   name: 'Best Western Palm Court Inn',
-//   lat: 37.6651025,
-//   lng: -121.0298634,
-//   iconCustom: './assets/images/hotel-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Hotel',
-//   name: 'Clarion Hotel And Conference Center',
-//   lat: 37.6692112,
-//   lng: -121.0365617,
-//   iconCustom: './assets/images/hotel-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Hotel',
-//   name: 'Double Tree Hotel Modesto',
-//   lat: 37.6417343,
-//   lng: -121.0050007,
-//   iconCustom: './assets/images/hotel-icon.png'
-// },
-
-// // Attractions
-// {
-//   country: 'US',
-//   type: 'Attractions',
-//   name: 'Vintage Fair Mall',
-//   lat: 37.688736,
-//   lng: -121.054026,
-//   iconCustom: './assets/images/tourist-attraction-icon.png'
-// },
-// {
-//   country: 'US',
-//   type: 'Attractions',
-//   name: 'Castle Air Museum',
-//   lat: 37.3648313,
-//   lng: -120.5800975,
-//   iconCustom: './assets/images/tourist-attraction-icon.png'
-// },
-
-// {
-//   country: 'US',
-//   type: 'Attractions',
-//   name: 'McHenry Mansion',
-//   lat: 37.6436578,
-//   lng: -120.9967008,
-//   iconCustom: './assets/images/tourist-attraction-icon.png'
-// },
-
-// {
-//   country: 'US',
-//   type: 'Attractions',
-//   name: 'Lucas Plaza Statue',
-//   lat: 37.6454414,
-//   lng: -120.9956372,
-//   iconCustom: './assets/images/tourist-attraction-icon.png'
-// },
