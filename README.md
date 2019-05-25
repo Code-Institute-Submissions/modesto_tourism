@@ -1,6 +1,6 @@
-# <a href="https://thestarvingcoder.github.io/modesto_tourism/index.html">Modesto Tourism</a>
+# <a href="https://thestarvingcoder.github.io/modesto_tourism/index.html">California Tourism</a>
 
-## A single tourism page for people visiting Modesto using Google Maps & Places API as well as OpenWeather API
+## A single tourism page for people visiting California using Google Maps & Places API as well as OpenWeather API
 
 ### UX
 
@@ -26,7 +26,7 @@ Jeff Doe is done using google maps and wants to go back to the top of the page. 
 
 ### Features
 
-- User is able to view the local weather by scrolling past the top image.
+- User is able to view the local weather by clicking the details button for the specific area.
 
 - User is able to read about the areas culture by clicking the about button in the navigation bar.
 
@@ -70,8 +70,11 @@ This website was deployed through Github Pages directly from the master branch. 
 
 Photos from
 
--[Algolub Photography](www.algolub.photoshelter.com)
--[Wikipedia](https://en.wikipedia.org/wiki/Modesto,_California)
+-[pixabay](https://pixabay.com/)
+
+Information from
+
+-[Wikipedia](https://en.wikipedia.org/wiki/California)
 
 ### Acknowledgements
 
@@ -81,12 +84,22 @@ Photos from
 
 ## Mock ups
 
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
-![]()
+![about_browser](https://thestarvingcoder.github.io/modesto_tourism/assets/images/about_browser_mockup.png)
+
+![about_phone](https://thestarvingcoder.github.io/modesto_tourism/assets/images/about_phone_mockup.png)
+
+![city_browser](https://thestarvingcoder.github.io/modesto_tourism/assets/images/city_overview_mockup.png)
+
+![city_phone](https://thestarvingcoder.github.io/modesto_tourism/assets/images/city_phone_overview_mockup.png)
+
+![contact_browser](https://thestarvingcoder.github.io/modesto_tourism/assets/images/contact_browser_mockup.png)
+
+![contact_phone](https://thestarvingcoder.github.io/modesto_tourism/assets/images/contact_phone_mockup.png)
+
+![home_browser](https://thestarvingcoder.github.io/modesto_tourism/assets/images/home_browser_mockup.png)
+
+![home_phone](https://thestarvingcoder.github.io/modesto_tourism/assets/images/home_phone_city_overview_mockup.png)
+
+![team_browser](https://thestarvingcoder.github.io/modesto_tourism/assets/images/team_browser_mockup.png)
+
+![team_phone](https://thestarvingcoder.github.io/modesto_tourism/assets/images/team_phone_mockup.png)

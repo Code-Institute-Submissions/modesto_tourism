@@ -43,12 +43,20 @@
     </div>
   </nav>
 
+<!---->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron center">
+				  <!--Travel image-->
+  <img src="./assets/images/ontheroadlogo.jpg" alt="traveling hichhiker" class="img-responsive center"></img>
+  
+  <p class="center">View the most popular travel destinations</p>
+			</div>
+		</div>
+	</div>
+</div>
 
-
-  <!--Travel image-->
-  <img src="./assets/images/ontheroadlogo.jpg" alt="traveling hichhiker" class="img-responsive img-rounded"></img>
-  <h1 class="center">California Travel</h1>
-  <h4 class="center">View the most popular travel destinations</h4>
 
   <!--Modal Grid-->
   <div class="container-fluid">
@@ -58,7 +66,7 @@
       <div class="col-md-4 center">
         <h3>Yosemite National Park</h3>
         <!--Yosemite Image-->
-        <img src="./assets/images/yosemite.jpg" class="img-responsive img-rounded photo"></img>
+        <img src="./assets/images/yosemite.jpg" class="img-responsive img-circle photo"></img>
 
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal">Yosemite Details</button>
@@ -100,6 +108,59 @@
                 <p>Mailing Address: PO Box 577 Yosemite National Park, CA 95389</p>
                 <p>
                   Phone: (209) 372-0200</p>
+
+
+
+  <!-- Auto Complete -->
+  <div class="container-fluid" id="mapsection"  style="z-index:2;" role="dialog" tabindex="-1" class="modal right fade addlocation">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pac-card" id="pac-card">
+          <div class="">
+            <div id="title">
+              Search
+            </div>
+            <div id="type-selector" class="pac-controls">
+              <input type="radio" name="type" id="changetype-all" checked="checked">
+              <label for="changetype-all">All</label>
+
+              <input type="radio" name="type" id="changetype-establishment">
+              <label for="changetype-establishment">Establishments</label>
+
+              <input type="radio" name="type" id="changetype-address">
+              <label for="changetype-address">Addresses</label>
+
+              <input type="radio" name="type" id="changetype-geocode">
+              <label for="changetype-geocode">Geocodes</label>
+            </div>
+            <div id="strict-bounds-selector" class="pac-controls">
+              <input type="checkbox" id="use-strict-bounds" value="">
+              <label for="use-strict-bounds">Strict Bounds</label>
+            </div>
+          </div>
+          <div id="pac-container">
+            <input id="pac-input" type="text" placeholder="Search for a location">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Map -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map"></div>
+        <div id="infowindow-content">
+          <img src="" width="16" height="16" id="place-icon" alt="map">
+          <span id="place-name" class="title"></span><br>
+          <span id="place-address"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
               </div>
               <!-- body -->
@@ -204,7 +265,7 @@
       <div class="col-md-4 center">
         <h3>Hollywood, CA</h3>
         <!--Hollywood Image-->
-        <img src="./assets/images/hollywood.jpg" class="img-responsive img-rounded photo"></img>
+        <img src="./assets/images/hollywood.jpg" class="img-responsive img-circle photo"></img>
 
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal2">Hollywood Details</button>
@@ -338,7 +399,7 @@
       <div class="col-md-4 center">
         <h3>Redwood National Park</h3>
         <!--Redwood Image-->
-        <img src="./assets/images/redwood.jpg" class="img-responsive img-rounded photo"></img>
+        <img src="./assets/images/redwood.jpg" class="img-responsive img-circle photo"></img>
 
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal3">Redwood details</button>
@@ -477,7 +538,7 @@
       <div class="col-md-4 center">
         <h3>Joshua Tree National Park</h3>
         <!--Joshua Tree Image-->
-        <img src="./assets/images/joshua-tree.jpg" class="img-responsive img-rounded photo"></img>
+        <img src="./assets/images/joshua-tree.jpg" class="img-responsive img-circle photo"></img>
 
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal4">Joshua Tree Details</button>
@@ -613,7 +674,7 @@
       <div class="col-md-4 center">
         <h3>Death Valley National Park</h3>
         <!--Death Valley Image-->
-        <img src="./assets/images/death-valley.jpg" class="img-responsive img-rounded photo"></img>
+        <img src="./assets/images/death-valley.jpg" class="img-responsive img-circle photo"></img>
 
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal5">Death Valley Details</button>
@@ -750,7 +811,7 @@
       <div class="col-md-4 center">
         <h3> Santa Cruz, CA</h3>
         <!--Santa Cruz Image-->
-        <img src="./assets/images/santacruz.jpg" class="img-responsive img-rounded photo"></img>
+        <img src="./assets/images/santacruz.jpg" class="img-responsive img-circle photo"></img>
 
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal6">Santa Cruz Details</button>
