@@ -1,7 +1,43 @@
 var map;
 
 function initMap() {
+  // The location of yosemite 
+  var yosemite  = {lat: 37.3467, lng:  -84.8247};
+  // The marker, positioned at yosemite 
+  var marker = new google.maps.Marker({position: yosemite , map: map});
+  
+   // The location of hollywood
+  var hollywood   = {lat: 34.0983, lng:  -118.3268};
+  // The marker, positioned at hollywood 
+  var marker = new google.maps.Marker({position: hollywood , map: map});
+  
+   // The location of santa cruz
+  var santacruz  = {lat: 33.2281, lng: -112.1666};
+  // The marker, positioned at santa cruz 
+  var marker = new google.maps.Marker({position: santacruz , map: map});
+  
+   // The location of joshua tree
+  var joshuatree  = {lat: 34.135, lng:-116.3152};
+  // The marker, positioned at joshua tree 
+  var marker = new google.maps.Marker({position: joshuatree , map: map});
+  
+   // The location of Death Valley
+  var DeathValley  = {lat: 37.3467, lng:  -84.8247};
+  // The marker, positioned at Death Valley 
+  var marker = new google.maps.Marker({position: DeathValley , map: map});
+  
+   // The location of Red Wood
+  var RedWood  = {lat: 37.3467, lng:  -84.8247};
+  // The marker, positioned at Red Wood 
+  var marker = new google.maps.Marker({position: RedWood , map: map});
+  
+  
+  // The map, centered at yosemite 
+  // var map = new google.maps.Map(
+  //     document.getElementById('map'), {zoom: 4, center: yosemite });
 
+  
+  
   // Create a new StyledMapType object, passing it an array of styles,
   // and the name to be displayed on the map type control.
   var styledMapType = new google.maps.StyledMapType(
@@ -178,11 +214,13 @@ function initMap() {
   // to the map type control.
   
   var map = new google.maps.Map(document.getElementById('map'), {
+    
     center: {
       lat: 37.3467,  
       lng: -84.8247,
     },
     zoom: 13,
+    
     mapTypeControlOptions: {
 
       scaleControl: true,
@@ -202,7 +240,7 @@ function initMap() {
       ],
 
     }
-
+    
   });
 
   //Associate the styled map with the MapTypeId and set it to display.

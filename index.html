@@ -17,8 +17,7 @@
   <link rel="stylesheet" href="./assets/styles/style.css">
   <!--  Map JS -->
   <script src="./assets/js/maps.js"></script>
-
-</head>
+  </head>
 
 
 <body>
@@ -34,7 +33,7 @@
         <a class="navbar-brand" href="./index.html">Home</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="./team.html">The Team</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
@@ -92,11 +91,10 @@
 
               <!-- body -->
               <div class="modal-body">
-                <h2></h2>
 
-                <h2>Current Weather</h2>
 
-                <div id="openweathermap-widget-15" class="center"></div>
+<div id="openweathermap-widget-23-1" class="weather-container"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 23,cityid: '4298003',appid: 'e5907fb3d33363041fad1e9d19229350',units: 'imperial',containerid: 'openweathermap-widget-23-1',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 
                 <h2>Parks, Campgrounds, Hiking</h2>
 
@@ -109,56 +107,6 @@
                 <p>
                   Phone: (209) 372-0200</p>
 
-
-
-  <!-- Auto Complete -->
-  <div class="container-fluid" id="mapsection"  style="z-index:2;" role="dialog" tabindex="-1" class="modal right fade addlocation">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="pac-card" id="pac-card">
-          <div class="">
-            <div id="title">
-              Search
-            </div>
-            <div id="type-selector" class="pac-controls">
-              <input type="radio" name="type" id="changetype-all" checked="checked">
-              <label for="changetype-all">All</label>
-
-              <input type="radio" name="type" id="changetype-establishment">
-              <label for="changetype-establishment">Establishments</label>
-
-              <input type="radio" name="type" id="changetype-address">
-              <label for="changetype-address">Addresses</label>
-
-              <input type="radio" name="type" id="changetype-geocode">
-              <label for="changetype-geocode">Geocodes</label>
-            </div>
-            <div id="strict-bounds-selector" class="pac-controls">
-              <input type="checkbox" id="use-strict-bounds" value="">
-              <label for="use-strict-bounds">Strict Bounds</label>
-            </div>
-          </div>
-          <div id="pac-container">
-            <input id="pac-input" type="text" placeholder="Search for a location">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
-  <!-- Map -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="map"></div>
-        <div id="infowindow-content">
-          <img src="" width="16" height="16" id="place-icon" alt="map">
-          <span id="place-name" class="title"></span><br>
-          <span id="place-address"></span>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -291,8 +239,10 @@
               <!-- body -->
               <div class="modal-body">
                 <h2>La la Land</h2>
-                <img src="./assets/images/hollywood.jpg" class="img-responsive"></img>
                 <h2>Weather</h2>
+
+<div id="openweathermap-widget-23-2" class="weather-container"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 23,cityid: '5020499',appid: 'e5907fb3d33363041fad1e9d19229350',units: 'imperial',containerid: 'openweathermap-widget-23-2',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 
                 <h2>About</h2>
 
@@ -427,7 +377,8 @@
               <div class="modal-body">
                 <h2>Weather</h2>
 
-                <div id="openweathermap-widget-15"></div>
+<div id="openweathermap-widget-23-3" class="weather-container"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 23,cityid: '5334312',appid: 'e5907fb3d33363041fad1e9d19229350',units: 'imperial',containerid: 'openweathermap-widget-23-3',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 
                 <h2>About</h2>
 
@@ -565,7 +516,8 @@
               <div class="modal-body">
                 <h2>Weather</h2>
 
-
+<div id="openweathermap-widget-23-4" class="weather-container"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 23,cityid: '5361298',appid: 'e5907fb3d33363041fad1e9d19229350',units: 'imperial',containerid: 'openweathermap-widget-23-4',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 
                 <h2>Where two deserts meet</h2>
 
@@ -700,9 +652,11 @@
               <!-- body -->
               <div class="modal-body">
                 <h2>Current Weather</h2>
-
-                <div id="openweathermap-widget-15"></div>
-
+                
+<div class="center">
+<div id="openweathermap-widget-23-5" class="weather-container"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 23,cityid: '5394124',appid: 'e5907fb3d33363041fad1e9d19229350',units: 'imperial',containerid: 'openweathermap-widget-23-5',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+</div>
                 <h2>About Death Valley</h2>
 
                 <p>Death Valley National Park is an American national park that straddles the California—Nevada border, east of the Sierra Nevada.The park boundaries include Death Valley, the northern section of Panamint Valley, the southern section of Eureka
@@ -829,7 +783,7 @@
               <!-- header -->
               <div class="modal-header">
                 <h1 id="myModalLabel" class="modal-title">
-                  Modal title
+                  Santa Cruz
                 </h1>
               </div>
               <!-- header -->
@@ -838,8 +792,8 @@
               <div class="modal-body">
                 <h2>Current Weather</h2>
 
-                <div id="openweathermap-widget-15"></div>
-
+<div id="openweathermap-widget-23-6" class="weather-container"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 23,cityid: '5393052',appid: 'e5907fb3d33363041fad1e9d19229350',units: 'imperial',containerid: 'openweathermap-widget-23-6',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
                 <h2>About Santa Cruz</h2>
 
                 <p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests, alternative community lifestyles, and socially liberal leanings. It is also home to the University of California, Santa Cruz, a premier research
@@ -848,7 +802,56 @@
                 <h2>Get in Touch</h2>
                 <p>303 Water Street, Suite 100 Santa Cruz, CA 95060</p>
                 <p>800.833.3494 or 831.425.1234</p>
+                
+                <!--map6-->
+ <!-- Auto Complete -->
+  <div class="container-fluid" id="mapsection">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pac-card" id="pac-card">
+          <div class="">
+            <div id="title">
+              Search
+            </div>
+            <div id="type-selector" class="pac-controls">
+              <input type="radio" name="type" id="changetype-all" checked="checked">
+              <label for="changetype-all">All</label>
 
+              <input type="radio" name="type" id="changetype-establishment">
+              <label for="changetype-establishment">Establishments</label>
+
+              <input type="radio" name="type" id="changetype-address">
+              <label for="changetype-address">Addresses</label>
+
+              <input type="radio" name="type" id="changetype-geocode">
+              <label for="changetype-geocode">Geocodes</label>
+            </div>
+            <div id="strict-bounds-selector" class="pac-controls">
+              <input type="checkbox" id="use-strict-bounds" value="">
+              <label for="use-strict-bounds">Strict Bounds</label>
+            </div>
+          </div>
+          <div id="pac-container">
+            <input id="pac-input" type="text" placeholder="Search for a location">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Map -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map6"></div>
+        <div id="infowindow-content">
+          <img src="" width="16" height="16" id="place-icon" alt="map">
+          <span id="place-name" class="title"></span><br>
+          <span id="place-address"></span>
+        </div>
+      </div>
+    </div>
+  </div>
               </div>
               <!-- body -->
 
@@ -856,12 +859,6 @@
               <div class="modal-footer">
                 <button class="btn btn-secondary" data-dismiss="modal">
           close
-        </button>
-                <button class="btn btn-default">
-          Default
-        </button>
-                <button class="btn btn-primary">
-          Primary
         </button>
               </div>
               <!-- footer -->
