@@ -1,37 +1,7 @@
 var map;
 
 function initMap() {
-  // The location of yosemite 
-  var yosemite  = {lat: 37.3467, lng:  -84.8247};
-  // The marker, positioned at yosemite 
-  var marker = new google.maps.Marker({position: yosemite , map: map});
-  
-   // The location of hollywood
-  var hollywood   = {lat: 34.0983, lng:  -118.3268};
-  // The marker, positioned at hollywood 
-  var marker = new google.maps.Marker({position: hollywood , map: map});
-  
-   // The location of santa cruz
-  var santacruz  = {lat: 33.2281, lng: -112.1666};
-  // The marker, positioned at santa cruz 
-  var marker = new google.maps.Marker({position: santacruz , map: map});
-  
-   // The location of joshua tree
-  var joshuatree  = {lat: 34.135, lng:-116.3152};
-  // The marker, positioned at joshua tree 
-  var marker = new google.maps.Marker({position: joshuatree , map: map});
-  
-   // The location of Death Valley
-  var DeathValley  = {lat: 37.3467, lng:  -84.8247};
-  // The marker, positioned at Death Valley 
-  var marker = new google.maps.Marker({position: DeathValley , map: map});
-  
-   // The location of Red Wood
-  var RedWood  = {lat: 37.3467, lng:  -84.8247};
-  // The marker, positioned at Red Wood 
-  var marker = new google.maps.Marker({position: RedWood , map: map});
-  
-  
+
   // The map, centered at yosemite 
   // var map = new google.maps.Map(
   //     document.getElementById('map'), {zoom: 4, center: yosemite });
@@ -216,10 +186,10 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     
     center: {
-      lat: 37.3467,  
-      lng: -84.8247,
+      lat: 37.744919,  
+      lng: -119.586342,
     },
-    zoom: 13,
+    zoom: 6,
     
     mapTypeControlOptions: {
 
@@ -243,11 +213,42 @@ function initMap() {
     
   });
 
+  // The location of yosemite 
+  var yosemite  = {lat: 37.744919, lng:  -119.586342};
+  // The marker, positioned at yosemite 
+  var marker = new google.maps.Marker({position: yosemite , map: map,title: "Yosemite"});
+  
+     // The location of hollywood
+  var hollywood   = {lat: 34.092808, lng:  -118.328659};
+  // The marker, positioned at hollywood 
+  var marker = new google.maps.Marker({position: hollywood , map: map,title: "Hollywood"});
+  
+   // The location of santa cruz
+  var santacruz  = {lat: 36.974117, lng: -122.030792};
+  // The marker, positioned at santa cruz 
+  var marker = new google.maps.Marker({position: santacruz , map: map,title: "Santa Cruz"});
+  
+   // The location of joshua tree
+  var joshuatree  = {lat: 34.135, lng:-116.3152};
+  // The marker, positioned at joshua tree 
+  var marker = new google.maps.Marker({position: joshuatree , map: map, title: "Joshua Tree"});
+  
+   // The location of Death Valley
+  var DeathValley  = {lat: 36.5673146, lng:  -117.1395761};
+  // The marker, positioned at Death Valley 
+  var marker = new google.maps.Marker({position: DeathValley , map: map, title: "Death Valley"});
+  
+   // The location of Red Wood
+  var RedWood  = {lat: 39.265230, lng:  -123.204040};
+  // The marker, positioned at Red Wood 
+  var marker = new google.maps.Marker({position: RedWood , map: map, title: "Red Wood"});
+
+
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('styled_map', styledMapType);
   map.setMapTypeId('styled_map');
   // Set Search to bottom
-
+  
   // Autocomplete
   var card = document.getElementById('pac-card');
   var input = document.getElementById('pac-input');
