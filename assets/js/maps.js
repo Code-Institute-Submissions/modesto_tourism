@@ -189,7 +189,7 @@ function initMap() {
       lat: 37.744919,  
       lng: -119.586342,
     },
-    zoom: 6,
+    zoom: 5,
     
     mapTypeControlOptions: {
 
@@ -212,11 +212,35 @@ function initMap() {
     }
     
   });
-
+  
+        var contentString  = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+       
   // The location of yosemite 
   var yosemite  = {lat: 37.744919, lng:  -119.586342};
   // The marker, positioned at yosemite 
   var marker = new google.maps.Marker({position: yosemite , map: map,title: "Yosemite"});
+   marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
   
      // The location of hollywood
   var hollywood   = {lat: 34.092808, lng:  -118.328659};
@@ -239,7 +263,7 @@ function initMap() {
   var marker = new google.maps.Marker({position: DeathValley , map: map, title: "Death Valley"});
   
    // The location of Red Wood
-  var RedWood  = {lat: 39.265230, lng:  -123.204040};
+  var RedWood  = {lat: 41.213181, lng:  -124.004631};
   // The marker, positioned at Red Wood 
   var marker = new google.maps.Marker({position: RedWood , map: map, title: "Red Wood"});
 
@@ -273,7 +297,7 @@ function initMap() {
   infowindow.setContent(infowindowContent);
   var marker = new google.maps.Marker({
     map: map,
-    anchorPoint: new google.maps.Point(0, -29)
+    anchorPoint: new google.maps.Point(0, -29),
   });
 
   autocomplete.addListener('place_changed', function () {

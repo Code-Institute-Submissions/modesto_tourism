@@ -4,39 +4,42 @@
 
 ### UX
 
-I created this website as a tribute to the current visit Modesto website that has seen better days. I made it so users who would be visiting the area would have the information they needed and nothing else.
+I created this website to help tourist to California who are looking to learn a bit more about each area and help decide where to visit. I made it so users who would be visiting the area would have the information they needed and nothing else.
 
 **User Story 1:**
-John Doe is in the area and wants to know the current weather. He can do so by scrolling past the main image to view the weather widget.
+John Doe is in the area and wants to know the current weather. He can do so by click the areas "details" button.
 
 **User Story 2:**
-Jane Doe wants to know what events are going on in Modesto. She can do this by clicking the events button in the navigation bar and the webpage will immediately go to the events section.
+Jane Doe wants to know what there is to do in the area. She can do so by clicking the "things to do" button.
 
 **User Story 3:**
-Jeff Doe wants to look for a nice place to eat. He can do so by clicking on the map button in the navigation bar and the webpage will immediately go to the google maps section.
+Jeff Doe wants to read more about the team that made this site. he can do so by clicking "team" in the nav bar.
 
 **User Story 4:**
-Jerry Doe wants to view photos from the annual Graffiti Night of years past. He can do so by clicking on photos in the navigation bar and the webpage will immediately go to the photos section.
+Jerry Doe wants to add an event to his calendar. He can do this by clicking on the "things to do" button and clicking the "add to calendar" button at the top of the modal.
 
 **User Story 5:**
-Jeff Doe wants to read more about Modesto and its culture. He can do so by clicking on the about button and the webpage will immediately go to the about section.
+Jeff Doe wants to read more about Yosemite. He can do so by clicking on the "details" button.
 
 **User Story 6:**
-Jeff Doe is done using google maps and wants to go back to the top of the page. He can do so by clicking the home button in the navigation bar and the webpage will immediately go to the top of the page.
+John Doe wants to read more about Golden State Travel. He can do so by clicking "About" in the nav bar.
 
 ### Features
 
 - User is able to view the local weather by clicking the details button for the specific area.
 
-- User is able to read about the areas culture by clicking the about button in the navigation bar.
+- User is able to read about the area by clicking the details button for each area.
 
-- User is able to view photos by clicking the photos button in the navigation bar.
+- User is able to view local events by clicking the events button for each area.
 
-- User is able to view local events by clicking the events button in the navigation bar.
-
-- User is able to use google maps by clicking the map button in the navigation bar.
+- User is able to use google maps by scrolling to the bottom of the page.
 
 - User is able to contact by clicking the contact button in the navigation bar.
+
+- User is able to read about the team by clicking the team button in the navigation bar.
+
+- User is able to read about the company by clicking the about button in the navigation bar.
+
 
 ### Technologies Used
 
@@ -80,7 +83,6 @@ Information from
 
 - I received inspiration for this project from the 5/5  [example project](https://code-institute-solutions.github.io/StudentExampleProjectGradeFive/)
 
-- I also was inspired by [VisitModesto](http://visitmodesto.com/default.asp)
 
 ## Mock ups
 
