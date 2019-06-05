@@ -59,7 +59,7 @@
   <div class="container-fluid">
     <div class="row">
       <!--Yosemite-->
-      <div class="col-md-4 center">
+      <div class="col-md-6 center">
         <h3>Yosemite National Park</h3>
         <!--Yosemite Image-->
         <img src="./assets/images/yosemite.jpg" alt="Yosemite" class="img-responsive img-circle photo">
@@ -120,7 +120,6 @@
                 <button class="btn btn-secondary" data-dismiss="modal">
                   close
                 </button>
-
               </div>
               <!-- footer -->
             </div>
@@ -255,7 +254,7 @@
       </div>
 
       <!--Hollywood-->
-      <div class="col-md-4 center">
+      <div class="col-md-6 center">
         <h3>Hollywood, CA</h3>
         <!--Hollywood Image-->
         <img src="./assets/images/hollywood.jpg" alt="Hollywood" class="img-responsive img-circle photo">
@@ -278,7 +277,7 @@
               <!-- header -->
               <!-- body -->
               <div class="modal-body">
-<!-- Weather -->
+                <!-- Weather -->
                 <div id="openweathermap-widget-23-2" class="weather-container"></div>
                 <script>
                   window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
@@ -422,14 +421,16 @@ Phone: +1-661-255-4100</pre>
               <h4>El Royale Hotel - Near Universal Studios Hollywood</h4>
               <p>El Royale Hotel - Near Universal Studios Hollywood is set in the Studio City district in Los Angeles,
                 3.1 mi from Hollywood Bowl. Free WiFi is provided throughout the property and free private parking is
-                available on site.Every air-conditioned room comes with a flat-screen cable TV. There are also microwaves, refrigerators,
+                available on site.Every air-conditioned room comes with a flat-screen cable TV. There are also
+                microwaves, refrigerators,
                 and coffee/tea makers available.
                 A complimentary continental breakfast is available to guests.</p>
               <br>
               <h4>Space Pods Hollywood - Coed Living B&B</h4>
               <p>Located in Los Angeles, 1.5 miles from Los Angeles County Museum Of Art (LACMA) and 5 miles from
                 Natural History Museum of Los Angeles County, Space Pods Hollywood - Coed Living B&B provides
-                accommodations with free WiFi, air conditioning, an outdoor swimming pool and a garden.There's a seating and/or dining area in some units.
+                accommodations with free WiFi, air conditioning, an outdoor swimming pool and a garden.There's a seating
+                and/or dining area in some units.
                 Guests can also relax in the shared lounge area.
                 Melrose Avenue is 2.8 miles from the bed and breakfast, while Hollywood Walk of Fame is 4 miles away.
                 The nearest airport is Los Angeles International Airport, 10 miles from Space Pods Hollywood.</p>
@@ -451,9 +452,10 @@ Phone: +1-661-255-4100</pre>
         </div>
         <!-- modal -->
       </div>
-
-      <!--Redwood -->
-      <div class="col-md-4 center">
+    </div>
+    <!--Redwood -->
+    <div class="row">
+      <div class="col-md-6 center">
         <h3>Redwood National Park</h3>
         <!--Redwood Image-->
         <img src="./assets/images/redwood.jpg" alt="Redwood" class="img-responsive img-circle photo">
@@ -476,7 +478,7 @@ Phone: +1-661-255-4100</pre>
               <!-- header -->
               <!-- body -->
               <div class="modal-body">
-<!-- Weather -->
+                <!-- Weather -->
                 <div id="openweathermap-widget-23-3" class="weather-container"></div>
                 <script>
                   window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
@@ -634,11 +636,9 @@ Phone: +1-661-255-4100</pre>
         </div>
         <!-- modal -->
       </div>
-    </div>
 
       <!--Joshua Tree-->
-      <div class="row">
-      <div class="col-md-4 center">
+      <div class="col-md-6 center">
         <h3>Joshua Tree National Park</h3>
         <!--Joshua Tree Image-->
         <img src="./assets/images/joshua-tree.jpg" alt="Joshua Tree" class="img-responsive img-circle photo">
@@ -662,7 +662,7 @@ Phone: +1-661-255-4100</pre>
               <!-- header -->
               <!-- body -->
               <div class="modal-body">
-<!-- Weather -->
+                <!-- Weather -->
                 <div id="openweathermap-widget-23-4" class="weather-container"></div>
                 <script>
                   window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
@@ -823,15 +823,20 @@ Phone: +1-661-255-4100</pre>
         </div>
         <!-- modal -->
       </div>
+      <!-- row -->
+    </div>
 
-      <!--Death Valley-->
-      <div class="col-md-4 center">
+    <!--Death Valley-->
+    <div class="row">
+      <div class="col-md-6 center">
         <h3>Death Valley National Park</h3>
         <!--Death Valley Image-->
         <img src="./assets/images/death-valley.jpg" alt="Death valley" class="img-responsive img-circle photo">
+
         <!-- view modal -->
         <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal5">Death Valley
           Details</button>
+
         <!-- view modal -->
         <!-- modal -->
         <div id="fsModal5" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -895,10 +900,12 @@ Phone: +1-661-255-4100</pre>
         </div>
         <!-- modal -->
 
-        <!-- Trigger the Things to see modal with a button -->
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5">Things to See</button>
+
+        <!-- Trigger the Things to do modal with a button -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal6">Things to
+          do</button>
         <!-- Modal -->
-        <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal fade" id="myModal6" role="dialog">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
@@ -906,10 +913,10 @@ Phone: +1-661-255-4100</pre>
                 <h4 class="modal-title">Do not miss list</h4>
               </div>
               <div class="modal-body">
-                <!--Calendar Button-->
+                <!-- Calendar Button-->
                 <script>
-                  function myFunction5() {
-                    document.getElementById("myDropdown5").classList.toggle("show");
+                  function myFunction6() {
+                    document.getElementById("myDropdown6").classList.toggle("show");
                   }
                   // Close the dropdown if the user clicks outside of it
                   window.onclick = function (event) {
@@ -929,9 +936,9 @@ Phone: +1-661-255-4100</pre>
                   rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
                   crossorigin="anonymous">
                 <div class="dropdown">
-                  <button onclick="myFunction5()" class="dropbtn"> <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  <button onclick="myFunction6()" class="dropbtn"> <i class="fa fa-calendar-o" aria-hidden="true"></i>
                     Add to Calendar</button>
-                  <div id="myDropdown5" class="dropdown-content">
+                  <div id="myDropdown6" class="dropdown-content">
                     <a href="#"> <i class="fa fa-apple" aria-hidden="true"></i> Apple calendar</a>
                     <a href="#"> <i class="fa fa-google" aria-hidden="true"></i> Google</a>
                     <a href="#"> <i class="fa fa-windows" aria-hidden="true"></i> Outlook</a>
@@ -1054,308 +1061,312 @@ Phone: +1-661-255-4100</pre>
       </div>
 
       <!--Santa Cruz-->
-        <div class="col-md-4 center">
-          <h3> Santa Cruz, CA</h3>
-          <!--Santa Cruz Image-->
-          <img src="./assets/images/santacruz.jpg" alt="Santa Cruz" class="img-responsive img-circle photo">
-          <!-- view modal -->
-          <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal6">Santa Cruz
-            Details</button>
-          <!-- view modal -->
-          <!-- modal -->
-          <div id="fsModal6" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <!-- dialog -->
-            <div class="modal-dialog">
-              <!-- content -->
-              <div class="modal-content">
-                <!-- header -->
-                <div class="modal-header">
-                  <h1 id="SantaCruzDetailsModalLabel" class="modal-title">
-                    Santa Cruz Details
-                  </h1>
-                </div>
-                <!-- header -->
-                <!-- body -->
-                <div class="modal-body">
-<!-- Weather -->
-                  <div id="openweathermap-widget-23-6" class="weather-container"></div>
-                  <script>
-                    window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
-                    window.myWidgetParam.push({
-                      id: 23,
-                      cityid: '5393052',
-                      appid: 'e5907fb3d33363041fad1e9d19229350',
-                      units: 'imperial',
-                      containerid: 'openweathermap-widget-23-6',
-                    });
-                    (function () {
-                      var script = document.createElement('script');
-                      script.async = true;
-                      script.charset = "utf-8";
-                      script.src =
-                        "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-                      var s = document.getElementsByTagName('script')[0];
-                      s.parentNode.insertBefore(script, s);
-                    })();
-                  </script>
-                  <h2>About Santa Cruz</h2>
-                  <p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests,
-                    alternative community lifestyles, and socially liberal leanings. It is also home to the University
-                    of
-                    California, Santa Cruz, a premier research
-                    institution and educational hub, as well as the Santa Cruz Beach Boardwalk, an oceanfront amusement
-                    park operating continuously since 1907.</p>
-                  <h2>Get in Touch</h2>
-                  <p>303 Water Street, Suite 100 Santa Cruz, CA 95060</p>
-                  <p>800.833.3494 or 831.425.1234</p>
-                </div>
-                <!-- body -->
-                <!-- footer -->
-                <div class="modal-footer">
-                  <button class="btn btn-secondary" data-dismiss="modal">
-                    close
-                  </button>
-                </div>
-                <!-- footer -->
+      <div class="col-md-6 center">
+        <h3> Santa Cruz, CA</h3>
+        <!--Santa Cruz Image-->
+        <img src="./assets/images/santacruz.jpg" alt="Santa Cruz" class="img-responsive img-circle photo">
+        <!-- view modal -->
+        <button class="btn btn-primary btn-modal" data-toggle="modal" data-target="#fsModal6">Santa Cruz
+          Details</button>
+        <!-- view modal -->
+        <!-- modal -->
+        <div id="fsModal6" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <!-- dialog -->
+          <div class="modal-dialog">
+            <!-- content -->
+            <div class="modal-content">
+              <!-- header -->
+              <div class="modal-header">
+                <h1 id="SantaCruzDetailsModalLabel" class="modal-title">
+                  Santa Cruz Details
+                </h1>
               </div>
-              <!-- content -->
+              <!-- header -->
+              <!-- body -->
+              <div class="modal-body">
+                <!-- Weather -->
+                <div id="openweathermap-widget-23-6" class="weather-container"></div>
+                <script>
+                  window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+                  window.myWidgetParam.push({
+                    id: 23,
+                    cityid: '5393052',
+                    appid: 'e5907fb3d33363041fad1e9d19229350',
+                    units: 'imperial',
+                    containerid: 'openweathermap-widget-23-6',
+                  });
+                  (function () {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.charset = "utf-8";
+                    script.src =
+                      "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(script, s);
+                  })();
+                </script>
+                <h2>About Santa Cruz</h2>
+                <p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests,
+                  alternative community lifestyles, and socially liberal leanings. It is also home to the University
+                  of
+                  California, Santa Cruz, a premier research
+                  institution and educational hub, as well as the Santa Cruz Beach Boardwalk, an oceanfront amusement
+                  park operating continuously since 1907.</p>
+                <h2>Get in Touch</h2>
+                <p>303 Water Street, Suite 100 Santa Cruz, CA 95060</p>
+                <p>800.833.3494 or 831.425.1234</p>
+              </div>
+              <!-- body -->
+              <!-- footer -->
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  close
+                </button>
+              </div>
+              <!-- footer -->
             </div>
-            <!-- dialog -->
+            <!-- content -->
           </div>
-          <!-- modal -->
+          <!-- dialog -->
+        </div>
+        <!-- modal -->
 
-          <!-- Trigger the Things to do modal with a button -->
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal6">Things to
-            do</button>
-          <!-- Modal -->
-          <div class="modal fade" id="myModal6" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Do not miss list</h4>
-                </div>
-                <div class="modal-body">
-                  <!-- Calendar Button-->
-                  <script>
-                    function myFunction6() {
-                      document.getElementById("myDropdown6").classList.toggle("show");
-                    }
-                    // Close the dropdown if the user clicks outside of it
-                    window.onclick = function (event) {
-                      if (!event.target.matches('.dropbtn')) {
-                        var dropdowns = document.getElementsByClassName("dropdown-content");
-                        var i;
-                        for (i = 0; i < dropdowns.length; i++) {
-                          var openDropdown = dropdowns[i];
-                          if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                          }
+        <!-- Trigger the Things to do modal with a button -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5">Things to
+          See</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal5" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Do not miss list</h4>
+              </div>
+              <div class="modal-body">
+                <!-- Calendar Button-->
+                <script>
+                  function myFunction5() {
+                    document.getElementById("myDropdown6").classList.toggle("show");
+                  }
+                  // Close the dropdown if the user clicks outside of it
+                  window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
                         }
                       }
                     }
-                  </script>
-                  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-                    crossorigin="anonymous">
-                  <div class="dropdown">
-                    <button onclick="myFunction6()" class="dropbtn"> <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                      Add to Calendar</button>
-                    <div id="myDropdown6" class="dropdown-content">
-                      <a href="#"> <i class="fa fa-apple" aria-hidden="true"></i> Apple calendar</a>
-                      <a href="#"> <i class="fa fa-google" aria-hidden="true"></i> Google</a>
-                      <a href="#"> <i class="fa fa-windows" aria-hidden="true"></i> Outlook</a>
-                      <a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i> Yahoo</a>
-                    </div>
+                  }
+                </script>
+                <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+                  rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+                  crossorigin="anonymous">
+                <div class="dropdown">
+                  <button onclick="myFunction5()" class="dropbtn"> <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    Add to Calendar</button>
+                  <div id="myDropdown5" class="dropdown-content">
+                    <a href="#"> <i class="fa fa-apple" aria-hidden="true"></i> Apple calendar</a>
+                    <a href="#"> <i class="fa fa-google" aria-hidden="true"></i> Google</a>
+                    <a href="#"> <i class="fa fa-windows" aria-hidden="true"></i> Outlook</a>
+                    <a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i> Yahoo</a>
                   </div>
-                  <h3>Roaring Camp Railroads</h3>
-                  <p>See California’s towering redwood trees from two historic railroads. Travel on authentic 19th
-                    century
-                    steam trains through the Big Trees to the summit of Bear Mountain. Or ride early 1900s Pullman cars
-                    and open-air excursion cars along
-                    a scenic river gorge through Henry Cowell Redwoods State Park to the beach of Santa Cruz.
-                    <pre>
+                </div>
+                <h3>Roaring Camp Railroads</h3>
+                <p>See California’s towering redwood trees from two historic railroads. Travel on authentic 19th
+                  century
+                  steam trains through the Big Trees to the summit of Bear Mountain. Or ride early 1900s Pullman cars
+                  and open-air excursion cars along
+                  a scenic river gorge through Henry Cowell Redwoods State Park to the beach of Santa Cruz.
+                  <pre>
 5401 Graham Hill Road
 Felton, CA 95018
 831.335.4484
 www.roaringcamp.com
 </pre>
 
-                    <!--ANO NUEVO STATE PARK-->
-                    <h3>ANO NUEVO STATE PARK</h3>
-                    <p>Elephant seal breeding colonies, major migrating bird route and rich in cultural history.
-                      Naturalist-led elephant seal tours held December-March by ticket only. Reservations begin in Oct.
-                      800.444.4445. Self-guided access available April-November
-                      by permit only (avail. at the park). Other seals present all year. Info: 650-879-0227
-                      <pre>
+                  <!--ANO NUEVO STATE PARK-->
+                  <h3>ANO NUEVO STATE PARK</h3>
+                  <p>Elephant seal breeding colonies, major migrating bird route and rich in cultural history.
+                    Naturalist-led elephant seal tours held December-March by ticket only. Reservations begin in Oct.
+                    800.444.4445. Self-guided access available April-November
+                    by permit only (avail. at the park). Other seals present all year. Info: 650-879-0227
+                    <pre>
   1 New Years Creek Rd.
 Pescadero, CA 94060
 650.879.2025 (Kiosk)
 www.parks.ca.gov
 </pre>
 
-                      <!--MONTEREY BAY NATIONAL MARINE SANCTUARY EXPLORATION CENTER-->
-                      <h3>MONTEREY BAY NATIONAL MARINE SANCTUARY EXPLORATION CENTER</h3>
-                      <p>The free admission Monterey Bay National Marine Sanctuary Exploration Center is just steps from
-                        the Santa Cruz Wharf and Beach Boardwalk. The Exploration Center features engaging interactive
-                        and
-                        multimedia exhibits to immerse you in the
-                        remarkable underwater environment of the sanctuary. Visitors can drive an underwater
-                        submersible,
-                        feed a turtle jellyfish and guide it on its journey across the Pacific or go anywhere in the
-                        world
-                        via Google’s Liquid Galaxy. It’s a wonderful
-                        experience for families and is enjoyed by all ages!
-                        <pre>
+                    <!--MONTEREY BAY NATIONAL MARINE SANCTUARY EXPLORATION CENTER-->
+                    <h3>MONTEREY BAY NATIONAL MARINE SANCTUARY EXPLORATION CENTER</h3>
+                    <p>The free admission Monterey Bay National Marine Sanctuary Exploration Center is just steps from
+                      the Santa Cruz Wharf and Beach Boardwalk. The Exploration Center features engaging interactive
+                      and
+                      multimedia exhibits to immerse you in the
+                      remarkable underwater environment of the sanctuary. Visitors can drive an underwater
+                      submersible,
+                      feed a turtle jellyfish and guide it on its journey across the Pacific or go anywhere in the
+                      world
+                      via Google’s Liquid Galaxy. It’s a wonderful
+                      experience for families and is enjoyed by all ages!
+                      <pre>
 35 Pacific Avenue
 Santa Cruz, CA 95060
 831.421.9993
 montereybay.noaa.gov
 </pre>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
               </div>
             </div>
-          </div>
-
-          <!--Accomedations-->
-          <!-- view modal -->
-          <button class="btn btn-info btn-modal" data-toggle="modal" data-target="#fsModal12">Accomedations</button>
-          <!-- view modal -->
-          <!-- modal -->
-          <div id="fsModal12" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <!-- dialog -->
-            <div class="modal-dialog">
-              <!-- content -->
-              <div class="modal-content">
-                <!-- header -->
-                <div class="modal-header">
-                  <h1 id="SantaCruzAccomedationsModalLabel" class="modal-title">
-                    Santa Cruz Accomedations
-                  </h1>
-                </div>
-                <!-- header -->
-                <!-- body -->
-                <div class="modal-body">
-                  <h4> Sea and sand inn</h4>
-                  <p>Within a 10-minute walk of Santa Cruz Wharf and Boardwalk, this hotel features rooms with free
-                    Wi-Fi.
-                    It has a 24-hour front desk and free guest parking.
-                    A TV and a DVD player are featured in each room at Sea & Sand Inn. All rooms provide a sitting area
-                    and a private bathroom. Each room offers a sea view.
-                    Guests at Inn Sea & Sand can enjoy a daily continental breakfast with fresh baked goods, boiled
-                    eggs,
-                    yogurt, fresh fruit salad, coffee, tea and juices.</p>
-                  <br>
-                  <h4>Hotel Fairfield Inn & Suites Santa Cruz</h4>
-                  <p>This Capitola hotel is a 10-minute drive from central Santa Cruz and New Brighton State Beach. It
-                    features an outdoor pool, and spacious suites with 32-inch flat-screen TVs and an iPod dock.
-                    A microwave, mini-fridge and coffee-maker are standard in every modern suite at the Fairfield Inn
-                    and
-                    Suites Santa Cruz-Capitola. All suites include free Wi-Fi and a sitting area with sofa bed.
-                    A daily buffet breakfast is served at the Santa Cruz Fairfield Inn. It has hot and cold items, as
-                    well
-                    as coffee, tea and juice.</p>
-                  <br>
-                  <h4>Pacific Blue Inn</h4>
-                  <p>Just 10 minutes’ walk from the Santa Cruz Beach Boardwalk, this eco-friendly hotel offers rooms
-                    with
-                    attached bathroom with flat-screen cable TVs and iPod docking stations. Free guest parking is
-                    available.
-                    Free WiFi is available in all of the rooms at the 100% nonsmoking Pacific Blue Inn. The
-                    brightly-colored rooms are also equipped with a DVD player, an electric fireplace and a work desk.
-                    The Pacific Blue Inn offers complimentary baked goods and coffee available for guests throughout the
-                    day.</p>
-
-                </div>
-                <!-- body -->
-                <!-- footer -->
-                <div class="modal-footer">
-                  <button class="btn btn-secondary" data-dismiss="modal">
-                    close
-                  </button>
-                </div>
-                <!-- footer -->
-              </div>
-              <!-- content -->
-            </div>
-            <!-- dialog -->
-          </div>
-          <!-- modal -->
-        </div>
-        </div>
-
-        <!-- Auto Complete -->
-        <div class="container-fluid" id="mapsection">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="pac-card" id="pac-card">
-                <div class="">
-                  <div id="title">
-                    Search
-                  </div>
-                  <div id="type-selector" class="pac-controls">
-                    <input type="radio" name="type" id="changetype-all" checked="checked">
-                    <label for="changetype-all">All</label>
-
-                    <input type="radio" name="type" id="changetype-establishment">
-                    <label for="changetype-establishment">Establishments</label>
-
-                    <input type="radio" name="type" id="changetype-address">
-                    <label for="changetype-address">Addresses</label>
-
-                    <input type="radio" name="type" id="changetype-geocode">
-                    <label for="changetype-geocode">Geocodes</label>
-                  </div>
-                  <div id="strict-bounds-selector" class="pac-controls">
-                    <input type="checkbox" id="use-strict-bounds" value="">
-                    <label for="use-strict-bounds">Strict Bounds</label>
-                  </div>
-                </div>
-                <div id="pac-container">
-                  <input id="pac-input" type="text" placeholder="Search for a location">
-                </div>
-              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
-        <br>
-        <!-- Map -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="map"></div>
-              <div id="infowindow-content">
-                <img src="" width="16" height="16" id="place-icon" alt="map">
-                <span id="place-name" class="title"></span><br>
-                <span id="place-address"></span>
+        <!--Accomedations-->
+        <!-- view modal -->
+        <button class="btn btn-info btn-modal" data-toggle="modal" data-target="#fsModal12">Accomedations</button>
+        <!-- view modal -->
+        <!-- modal -->
+        <div id="fsModal12" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+          aria-hidden="true">
+          <!-- dialog -->
+          <div class="modal-dialog">
+            <!-- content -->
+            <div class="modal-content">
+              <!-- header -->
+              <div class="modal-header">
+                <h1 id="SantaCruzAccomedationsModalLabel" class="modal-title">
+                  Santa Cruz Accomedations
+                </h1>
               </div>
+              <!-- header -->
+              <!-- body -->
+              <div class="modal-body">
+                <h4> Sea and sand inn</h4>
+                <p>Within a 10-minute walk of Santa Cruz Wharf and Boardwalk, this hotel features rooms with free
+                  Wi-Fi.
+                  It has a 24-hour front desk and free guest parking.
+                  A TV and a DVD player are featured in each room at Sea & Sand Inn. All rooms provide a sitting area
+                  and a private bathroom. Each room offers a sea view.
+                  Guests at Inn Sea & Sand can enjoy a daily continental breakfast with fresh baked goods, boiled
+                  eggs,
+                  yogurt, fresh fruit salad, coffee, tea and juices.</p>
+                <br>
+                <h4>Hotel Fairfield Inn & Suites Santa Cruz</h4>
+                <p>This Capitola hotel is a 10-minute drive from central Santa Cruz and New Brighton State Beach. It
+                  features an outdoor pool, and spacious suites with 32-inch flat-screen TVs and an iPod dock.
+                  A microwave, mini-fridge and coffee-maker are standard in every modern suite at the Fairfield Inn
+                  and
+                  Suites Santa Cruz-Capitola. All suites include free Wi-Fi and a sitting area with sofa bed.
+                  A daily buffet breakfast is served at the Santa Cruz Fairfield Inn. It has hot and cold items, as
+                  well
+                  as coffee, tea and juice.</p>
+                <br>
+                <h4>Pacific Blue Inn</h4>
+                <p>Just 10 minutes’ walk from the Santa Cruz Beach Boardwalk, this eco-friendly hotel offers rooms
+                  with
+                  attached bathroom with flat-screen cable TVs and iPod docking stations. Free guest parking is
+                  available.
+                  Free WiFi is available in all of the rooms at the 100% nonsmoking Pacific Blue Inn. The
+                  brightly-colored rooms are also equipped with a DVD player, an electric fireplace and a work desk.
+                  The Pacific Blue Inn offers complimentary baked goods and coffee available for guests throughout the
+                  day.</p>
+
+              </div>
+              <!-- body -->
+              <!-- footer -->
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  close
+                </button>
+              </div>
+              <!-- footer -->
+            </div>
+            <!-- content -->
+          </div>
+          <!-- dialog -->
+        </div>
+        <!-- modal -->
+      </div>
+      <!-- Col -->
+    </div>
+    <!-- row -->
+  </div>
+  <!-- container -->
+
+  <!-- Auto Complete -->
+  <div class="container-fluid" id="mapsection">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pac-card" id="pac-card">
+          <div class="">
+            <div id="title">
+              Search
+            </div>
+            <div id="type-selector" class="pac-controls">
+              <input type="radio" name="type" id="changetype-all" checked="checked">
+              <label for="changetype-all">All</label>
+
+              <input type="radio" name="type" id="changetype-establishment">
+              <label for="changetype-establishment">Establishments</label>
+
+              <input type="radio" name="type" id="changetype-address">
+              <label for="changetype-address">Addresses</label>
+
+              <input type="radio" name="type" id="changetype-geocode">
+              <label for="changetype-geocode">Geocodes</label>
+            </div>
+            <div id="strict-bounds-selector" class="pac-controls">
+              <input type="checkbox" id="use-strict-bounds" value="">
+              <label for="use-strict-bounds">Strict Bounds</label>
             </div>
           </div>
+          <div id="pac-container">
+            <input id="pac-input" type="text" placeholder="Search for a location">
+          </div>
         </div>
-        <!--  -->
-</div>
-        <!-- Footer -->
-        <footer class="container-fluid center">
-          <i class="fa fa-facebook-square fa-3x" aria-hidden="false"></i>
-          <i class="fa fa-twitter-square fa-3x" aria-hidden="false"></i>
-          <i class="fa fa-instagram fa-3x" aria-hidden="false"></i>
-        </footer>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Map -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="map"></div>
+        <div id="infowindow-content">
+          <img src="" width="16" height="16" id="place-icon" alt="map">
+          <span id="place-name" class="title"></span><br>
+          <span id="place-address"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  </div>
+  <!-- Footer -->
+  <footer class="container-fluid center">
+    <i class="fa fa-facebook-square fa-3x" aria-hidden="false"></i>
+    <i class="fa fa-twitter-square fa-3x" aria-hidden="false"></i>
+    <i class="fa fa-instagram fa-3x" aria-hidden="false"></i>
+  </footer>
 
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <!-- Google Maps API -->
-        <script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&libraries=places&callback=initMap"
-          async defer>
-        </script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- Google Maps API -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4ulIzhXIh25aDHSPhreILARR-6-AoSs&libraries=places&callback=initMap"
+    async defer>
+  </script>
 </body>
+
 </html>
