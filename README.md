@@ -24,6 +24,9 @@ Jeff Doe wants to read more about Yosemite. He can do so by clicking on the "det
 **User Story 6:**
 John Doe wants to read more about Golden State Travel. He can do so by clicking "About" in the nav bar.
 
+**User Story 7:**
+Jane Doe wants to see what accomadations are in the area if any. She can do so by clicking the "accomedations" button for each area.
+
 ### Features
 
 - User is able to view the local weather by clicking the details button for the specific area.
@@ -39,6 +42,8 @@ John Doe wants to read more about Golden State Travel. He can do so by clicking 
 - User is able to read about the team by clicking the team button in the navigation bar.
 
 - User is able to read about the company by clicking the about button in the navigation bar.
+
+- User is able to see local accomadations by clicking the accomedations button for each area.
 
 
 ### Technologies Used
@@ -69,6 +74,10 @@ This site was tested across various browsers and browser sizes. Multiple times I
 
 This website was deployed through Github Pages directly from the master branch. In order to run the code locally simply download the files, start up Visual Studio Code or your IDE of choice to check it out. The difference between the development version and deployment version are little to none.
 
+### Things to do in the Future
+
+I would like to evenutally make this site exclusivly for national parks in California. I would remove the cities and add the MANY parks large and small that California has to offer. Browings the National Parks Service website gave me this idea as it is a great souce of information for all the parks in the United States.
+
 ### Credits
 
 Photos from
@@ -77,7 +86,19 @@ Photos from
 
 Information from
 
--[Wikipedia](https://en.wikipedia.org/wiki/California)
+-[Yosemite](https://www.nps.gov/yose/index.htm)
+
+-[Redwood](https://www.nps.gov/redw/index.htm)
+
+-[Death Valley](https://www.nps.gov/deva/index.htm)
+
+-[Joshua Tree](https://www.nps.gov/jotr/index.htm)
+
+-[Accomedations](https://www.booking.com/)
+
+-[Santa Cruz](https://en.wikipedia.org/wiki/Santa_Cruz%2C_California)
+
+-[Hollywood](https://en.wikipedia.org/wiki/Hollywood)
 
 ### Acknowledgements
 
