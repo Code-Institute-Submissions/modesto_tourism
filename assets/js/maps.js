@@ -191,6 +191,7 @@ function initMap() {
     },
     zoom: 5,
     
+    
     mapTypeControlOptions: {
 
       scaleControl: true,
@@ -212,60 +213,111 @@ function initMap() {
     }
     
   });
+
+   // Info Windows
+   var bounds = new google.maps.LatLngBounds();
+   // Multiple markers location, latitude, and longitude
+   var markers = [
+    ['Yosemite, CA', 37.744919, -119.586342],
+    ['Hollywood,CA', 34.092808, -118.328659],
+    ['Santa Cruz,CA', 36.974117,-122.030792],
+    ['Joshua Tree,CA',34.135, -116.3152],
+    ['Death Valley,CA',36.5673146, -117.1395761],
+    ['Redwood,CA',41.213181, -124.004631]
+];
+                    
+// Info window content
+var infoWindowContent = [
+    ['<div class="info_content">' +
+    '<h3>Yosemite National Park</h3>' +
+    '<p>First protected in 1864, Yosemite National Park is best known for its waterfalls. </p>' + '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Hollywood, California</h3>' +
+    '<p>Hollywood is a neighborhood in the central region of Los Angeles, California.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Santa Cruz, California</h3>' +
+    '<p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests, alternative community lifestyles, and socially liberal leanings.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Joshua Tree National Park</h3>' +
+    '<p>Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Death Valley National Park</h3>' +
+    '<p>Death Valley National Park is an American national park that straddles the California—Nevada border, east of the Sierra Nevada.</p>' +
+    '</div>'],
+    ['<div class="info_content">' +
+    '<h3>Redwood National Park</h3>' +
+    '<p>Most people know Redwood as home to the tallest trees on Earth. For thousands of years people have lived in this verdant landscape.</p>' +
+    '</div>']
+];
+    
+// Add multiple markers to map
+var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+// Place each marker on the map  
+for( i = 0; i < markers.length; i++ ) {
+    var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+    bounds.extend(position);
+    marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title: markers[i][0]
+    });
+    
+    // Add info window to marker    
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+            infoWindow.setContent(infoWindowContent[i][0]);
+            infoWindow.open(map, marker,);
+        }
+    })(marker, i));
+
   
-        var contentString  = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
-      '</div>'+
-      '</div>';
+  // Center the map to fit all markers on the screen
+  map.fitBounds(bounds);
+}
+
+// Set zoom level
+// var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+//     this.setZoom(14);
+//     google.maps.event.removeListener(boundsListener);
+// });
+
+
+// Load initialize function
+// google.maps.event.addDomListener(window, 'load', initMap);
        
-  // The location of yosemite 
-  var yosemite  = {lat: 37.744919, lng:  -119.586342};
-  // The marker, positioned at yosemite 
-  var marker = new google.maps.Marker({position: yosemite , map: map,title: "Yosemite"});
-   marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
+  // // The location of yosemite 
+  // var yosemite  = {lat: 37.744919, lng:  -119.586342};
+  // // The marker, positioned at yosemite 
+  // var marker = new google.maps.Marker({position: yosemite , map: map,title: "Yosemite"});
+    
+  //    // The location of hollywood
+  // var hollywood   = {lat: 34.092808, lng:  -118.328659};
+  // // The marker, positioned at hollywood 
+  // var marker = new google.maps.Marker({position: hollywood , map: map,title: "Hollywood"});
   
-     // The location of hollywood
-  var hollywood   = {lat: 34.092808, lng:  -118.328659};
-  // The marker, positioned at hollywood 
-  var marker = new google.maps.Marker({position: hollywood , map: map,title: "Hollywood"});
+  //  // The location of santa cruz
+  // var santacruz  = {lat: 36.974117, lng: -122.030792};
+  // // The marker, positioned at santa cruz 
+  // var marker = new google.maps.Marker({position: santacruz , map: map,title: "Santa Cruz"});
   
-   // The location of santa cruz
-  var santacruz  = {lat: 36.974117, lng: -122.030792};
-  // The marker, positioned at santa cruz 
-  var marker = new google.maps.Marker({position: santacruz , map: map,title: "Santa Cruz"});
+  //  // The location of joshua tree
+  // var joshuatree  = {lat: 34.135, lng:-116.3152};
+  // // The marker, positioned at joshua tree 
+  // var marker = new google.maps.Marker({position: joshuatree , map: map, title: "Joshua Tree"});
   
-   // The location of joshua tree
-  var joshuatree  = {lat: 34.135, lng:-116.3152};
-  // The marker, positioned at joshua tree 
-  var marker = new google.maps.Marker({position: joshuatree , map: map, title: "Joshua Tree"});
+  //  // The location of Death Valley
+  // var DeathValley  = {lat: 36.5673146, lng:  -117.1395761};
+  // // The marker, positioned at Death Valley 
+  // var marker = new google.maps.Marker({position: DeathValley , map: map, title: "Death Valley"});
   
-   // The location of Death Valley
-  var DeathValley  = {lat: 36.5673146, lng:  -117.1395761};
-  // The marker, positioned at Death Valley 
-  var marker = new google.maps.Marker({position: DeathValley , map: map, title: "Death Valley"});
-  
-   // The location of Red Wood
-  var RedWood  = {lat: 41.213181, lng:  -124.004631};
-  // The marker, positioned at Red Wood 
-  var marker = new google.maps.Marker({position: RedWood , map: map, title: "Red Wood"});
+  //  // The location of Red Wood
+  // var RedWood  = {lat: 41.213181, lng:  -124.004631};
+  // // The marker, positioned at Red Wood 
+  // var marker = new google.maps.Marker({position: RedWood , map: map, title: "Red Wood"});
 
 
   //Associate the styled map with the MapTypeId and set it to display.
