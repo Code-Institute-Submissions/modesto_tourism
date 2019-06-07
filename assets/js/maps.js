@@ -230,31 +230,31 @@ function initMap() {
 var infoWindowContent = [
     ['<div class="info_content">' +
     '<h4>Yosemite National Park</h4>' +
-    '<img src="/assets/images/yosemite.jpg" width="80" height="80" alt="Yosemite">' +
+    '<img src="./assets/images/yosemite.jpg" width="80" height="80" alt="Yosemite">' +
     '<p>First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.<a href="https://en.wikipedia.org/wiki/Yosemite_National_Park" target="_blank">More Info</a> </p>' + '</div>'],
     ['<div class="info_content">' +
     '<h4>Hollywood, California</h4>' +
-    '<img src="/assets/images/hollywood.jpg" width="80" height="80" alt="Hollywood">' +
+    '<img src="./assets/images/hollywood.jpg" width="80" height="80" alt="Hollywood">' +
     '<p>Hollywood is a neighborhood in the central region of Los Angeles, California. Its name has come to be a shorthand reference for the industry and the people associated with it.<a href="https://en.wikipedia.org/wiki/Hollywood" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h4>Santa Cruz, California</h4>' +
-    '<img src="/assets/images/santacruz.jpg" width="80" height="80" alt="Santa Cruz">' +
+    '<img src="./assets/images/santacruz.jpg" width="80" height="80" alt="Santa Cruz">' +
     '<p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests, alternative community lifestyles, and socially liberal leanings as well as the Santa Cruz Beach Boardwalk, an oceanfront amusement park operating continuously since 1907.<a href="https://en.wikipedia.org/wiki/Santa_Cruz,_California" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h4>Joshua Tree National Park</h4>' +
-    '<img src="/assets/images/joshua-tree.jpg" width="80" height="80" alt="joshua tree">' +
+    '<img src="./assets/images/joshua-tree.jpg" width="80" height="80" alt="joshua tree">' +
     '<p>Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California.<a href="https://en.wikipedia.org/wiki/Joshua_Tree_National_Park" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h4>Death Valley National Park</h4>' +
-    '<img src="/assets/images/death-valley.jpg" width="80" height="80" alt="Death Valley">' +
+    '<img src="./assets/images/death-valley.jpg" width="80" height="80" alt="Death Valley">' +
     '<p>Death Valley National Park is an American national park that straddles the California—Nevada border, east of the Sierra Nevada. The park boundaries include Death Valley, the northern section of Panamint Valley, the southern section of Eureka Valley, and most of Saline Valley.<a href="https://en.wikipedia.org/wiki/Hollywood" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
     '<h4>Redwood National Park</h4>' +
-    '<img src="/assets/images/redwood.jpg" width="80" height="80" alt="Redwood">' +
+    '<img src="./assets/images/redwood.jpg" width="80" height="80" alt="Redwood">' +
     '<p>Most people know Redwood as home to the tallest trees on Earth. For thousands of years people have lived in this verdant landscape. The parks also protect vast prairies, oak woodlands, wild river-ways, and nearly 40-miles of rugged coastline.<a href="https://en.wikipedia.org/wiki/Redwood_National_and_State_Parks" target="_blank">More Info</a></p>' +
     '</div>']
 ];
