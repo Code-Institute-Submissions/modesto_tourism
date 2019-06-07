@@ -229,27 +229,33 @@ function initMap() {
 // Info window content
 var infoWindowContent = [
     ['<div class="info_content">' +
-    '<h3>Yosemite National Park</h3>' +
-    '<p>First protected in 1864, Yosemite National Park is best known for its waterfalls. </p>' + '</div>'],
+    '<h4>Yosemite National Park</h4>' +
+    '<img src="/assets/images/yosemite.jpg" width="80" height="80" alt="Yosemite">' +
+    '<p>First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.<a href="https://en.wikipedia.org/wiki/Yosemite_National_Park" target="_blank">More Info</a> </p>' + '</div>'],
     ['<div class="info_content">' +
-    '<h3>Hollywood, California</h3>' +
-    '<p>Hollywood is a neighborhood in the central region of Los Angeles, California.</p>' +
+    '<h4>Hollywood, California</h4>' +
+    '<img src="/assets/images/hollywood.jpg" width="80" height="80" alt="Hollywood">' +
+    '<p>Hollywood is a neighborhood in the central region of Los Angeles, California. Its name has come to be a shorthand reference for the industry and the people associated with it.<a href="https://en.wikipedia.org/wiki/Hollywood" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
-    '<h3>Santa Cruz, California</h3>' +
-    '<p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests, alternative community lifestyles, and socially liberal leanings.</p>' +
+    '<h4>Santa Cruz, California</h4>' +
+    '<img src="/assets/images/santacruz.jpg" width="80" height="80" alt="Santa Cruz">' +
+    '<p>Santa Cruz is known for its moderate climate, natural environment, coastline, redwood forests, alternative community lifestyles, and socially liberal leanings as well as the Santa Cruz Beach Boardwalk, an oceanfront amusement park operating continuously since 1907.<a href="https://en.wikipedia.org/wiki/Santa_Cruz,_California" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
-    '<h3>Joshua Tree National Park</h3>' +
-    '<p>Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park.</p>' +
+    '<h4>Joshua Tree National Park</h4>' +
+    '<img src="/assets/images/joshua-tree.jpg" width="80" height="80" alt="joshua tree">' +
+    '<p>Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California.<a href="https://en.wikipedia.org/wiki/Joshua_Tree_National_Park" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
-    '<h3>Death Valley National Park</h3>' +
-    '<p>Death Valley National Park is an American national park that straddles the California—Nevada border, east of the Sierra Nevada.</p>' +
+    '<h4>Death Valley National Park</h4>' +
+    '<img src="/assets/images/death-valley.jpg" width="80" height="80" alt="Death Valley">' +
+    '<p>Death Valley National Park is an American national park that straddles the California—Nevada border, east of the Sierra Nevada. The park boundaries include Death Valley, the northern section of Panamint Valley, the southern section of Eureka Valley, and most of Saline Valley.<a href="https://en.wikipedia.org/wiki/Hollywood" target="_blank">More Info</a></p>' +
     '</div>'],
     ['<div class="info_content">' +
-    '<h3>Redwood National Park</h3>' +
-    '<p>Most people know Redwood as home to the tallest trees on Earth. For thousands of years people have lived in this verdant landscape.</p>' +
+    '<h4>Redwood National Park</h4>' +
+    '<img src="/assets/images/redwood.jpg" width="80" height="80" alt="Redwood">' +
+    '<p>Most people know Redwood as home to the tallest trees on Earth. For thousands of years people have lived in this verdant landscape. The parks also protect vast prairies, oak woodlands, wild river-ways, and nearly 40-miles of rugged coastline.<a href="https://en.wikipedia.org/wiki/Redwood_National_and_State_Parks" target="_blank">More Info</a></p>' +
     '</div>']
 ];
     
@@ -278,47 +284,6 @@ for( i = 0; i < markers.length; i++ ) {
   // Center the map to fit all markers on the screen
   map.fitBounds(bounds);
 }
-
-// Set zoom level
-// var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-//     this.setZoom(14);
-//     google.maps.event.removeListener(boundsListener);
-// });
-
-
-// Load initialize function
-// google.maps.event.addDomListener(window, 'load', initMap);
-       
-  // // The location of yosemite 
-  // var yosemite  = {lat: 37.744919, lng:  -119.586342};
-  // // The marker, positioned at yosemite 
-  // var marker = new google.maps.Marker({position: yosemite , map: map,title: "Yosemite"});
-    
-  //    // The location of hollywood
-  // var hollywood   = {lat: 34.092808, lng:  -118.328659};
-  // // The marker, positioned at hollywood 
-  // var marker = new google.maps.Marker({position: hollywood , map: map,title: "Hollywood"});
-  
-  //  // The location of santa cruz
-  // var santacruz  = {lat: 36.974117, lng: -122.030792};
-  // // The marker, positioned at santa cruz 
-  // var marker = new google.maps.Marker({position: santacruz , map: map,title: "Santa Cruz"});
-  
-  //  // The location of joshua tree
-  // var joshuatree  = {lat: 34.135, lng:-116.3152};
-  // // The marker, positioned at joshua tree 
-  // var marker = new google.maps.Marker({position: joshuatree , map: map, title: "Joshua Tree"});
-  
-  //  // The location of Death Valley
-  // var DeathValley  = {lat: 36.5673146, lng:  -117.1395761};
-  // // The marker, positioned at Death Valley 
-  // var marker = new google.maps.Marker({position: DeathValley , map: map, title: "Death Valley"});
-  
-  //  // The location of Red Wood
-  // var RedWood  = {lat: 41.213181, lng:  -124.004631};
-  // // The marker, positioned at Red Wood 
-  // var marker = new google.maps.Marker({position: RedWood , map: map, title: "Red Wood"});
-
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('styled_map', styledMapType);

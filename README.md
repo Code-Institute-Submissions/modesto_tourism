@@ -27,6 +27,9 @@ John Doe wants to read more about Golden State Travel. He can do so by clicking 
 **User Story 7:**
 Jane Doe wants to see what accomadations are in the area if any. She can do so by clicking the "accomedations" button for each area.
 
+**User Story 8:**
+Jeff wants to read more about an area. He can do so by clicking on a map marker and clicking "More Information".
+
 ### Features
 
 - User is able to view the local weather by clicking the details button for the specific area.
@@ -45,6 +48,9 @@ Jane Doe wants to see what accomadations are in the area if any. She can do so b
 
 - User is able to see local accomadations by clicking the accomedations button for each area.
 
+- User is able to click on map markers to read a bit about the area and see a small picture.
+
+- User is able to read more about an area by clicking on a map marker and clicking "More Information".
 
 ### Technologies Used
 
