@@ -2,10 +2,6 @@ var map;
 
 function initMap() {
 
-  // The map, centered at yosemite 
-  // var map = new google.maps.Map(
-  //     document.getElementById('map'), {zoom: 4, center: yosemite });
-
   
   
   // Create a new StyledMapType object, passing it an array of styles,
