@@ -58,7 +58,7 @@ Jeff wants to read more about an area. He can do so by clicking on a map marker 
 
 - **CSS**
 
-- **Bootstrap**  - The project uses bootstrap for the navbar, events, and image carousel.
+- **Bootstrap**  - The project uses bootstrap for the navbar, modals, and responsiveness.
 
 - **jQuery**  - The project uses JQuery to simplify DOM manipulation.
 
